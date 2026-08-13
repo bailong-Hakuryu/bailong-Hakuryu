@@ -32,13 +32,6 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_details: bytes-size, percentage
           plugin_languages_sections: most-used
-          # 提交习惯图表（不使用带 emoji 的 facts）
-          plugin_habits: yes
-          plugin_habits_days: 30
-          plugin_habits_facts: no
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
-
       - name: 生成统计卡片（深色·终端风）
         uses: lowlighter/metrics@latest
         with:

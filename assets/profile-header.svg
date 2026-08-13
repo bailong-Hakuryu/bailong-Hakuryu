@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">白龙 · Bailong</title>
+  <desc id="desc">AI Agent、长期记忆与 Windows 工具开发者的 GitHub 主页横幅</desc>
+
+  <rect width="1200" height="320" fill="#101218"/>
+  <path d="M0 256H1200M0 272H1200M0 288H1200" stroke="#252a35" stroke-width="1"/>
+  <path d="M0 48H1200M0 32H1200" stroke="#1c2029" stroke-width="1"/>
+  <rect x="54" y="58" width="6" height="204" fill="#f06292"/>
+
+  <text x="90" y="78" fill="#67b7f7" font-family="Consolas, 'Cascadia Code', monospace" font-size="18" font-weight="600">PROFILE / MEMORY SYSTEMS</text>
+  <text x="90" y="158" fill="#ffffff" font-family="'Segoe UI', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="66" font-weight="700">白龙 · Bailong</text>
+  <text x="90" y="207" fill="#d9dde7" font-family="'Segoe UI', 'Microsoft YaHei', 'Noto Sans SC', sans-serif" font-size="25">一条在追寻圣杯路上的龙</text>
+
+  <text x="90" y="260" fill="#f48fb1" font-family="Consolas, 'Cascadia Code', monospace" font-size="17" font-weight="600">AI AGENTS</text>
+  <rect x="214" y="246" width="1" height="18" fill="#596171"/>
+  <text x="234" y="260" fill="#9fa8da" font-family="Consolas, 'Cascadia Code', monospace" font-size="17" font-weight="600">LONG-TERM MEMORY</text>
+  <rect x="440" y="246" width="1" height="18" fill="#596171"/>
+  <text x="460" y="260" fill="#ffffff" font-family="Consolas, 'Cascadia Code', monospace" font-size="17" font-weight="600">WINDOWS TOOLING</text>
+
+  <g transform="translate(820 49)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M53 198C88 184 103 155 103 125C103 86 129 49 176 41C158 54 151 69 151 84C184 65 221 70 247 92C225 93 209 101 199 114C229 119 250 137 259 162C232 151 207 153 184 167C159 181 137 207 94 213C78 215 64 210 53 198Z" stroke="#f4f6fb" stroke-width="5"/>
+    <path d="M151 84L124 62L127 103M199 114L222 133L183 131M184 167C161 151 139 151 120 164" stroke="#9fa8da" stroke-width="4"/>
+    <path d="M52 198L25 221H91M259 162L291 162M247 92L278 72" stroke="#f06292" stroke-width="4"/>
+    <path d="M177 110H185" stroke="#67b7f7" stroke-width="7"/>
+    <rect x="276" y="155" width="12" height="12" stroke="#67b7f7" stroke-width="3"/>
+    <rect x="275" y="65" width="12" height="12" stroke="#f06292" stroke-width="3"/>
+    <rect x="18" y="215" width="12" height="12" stroke="#9fa8da" stroke-width="3"/>
+  </g>
+
+  <text x="1052" y="286" fill="#737c8e" font-family="Consolas, 'Cascadia Code', monospace" font-size="14" text-anchor="end">E.R.I.I / 2026</text>
+</svg>
