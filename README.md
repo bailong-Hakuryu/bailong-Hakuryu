@@ -11,7 +11,7 @@
   <p>AI Agents · 长期记忆 · RAG · Windows 系统工具</p>
 
   <p>
-    <a href="https://xn--9wyy09f.cn"><img alt="Blog" src="https://img.shields.io/badge/Blog-白龙.cn-101218?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=F06292"/></a>
+    <a href="https://xn--9wyy09f.cn"><img alt="Blog" src="https://img.shields.io/badge/Blog-%E7%99%BD%E9%BE%99.cn-101218?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=F06292"/></a>
     <a href="https://x.com/Hakuryubailong"><img alt="X" src="https://img.shields.io/badge/X-@Hakuryubailong-101218?style=for-the-badge&logo=x&logoColor=white&labelColor=9FA8DA"/></a>
     <a href="mailto:bailong996633@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-Gmail-101218?style=for-the-badge&logo=gmail&logoColor=white&labelColor=F48FB1"/></a>
   </p>
@@ -86,8 +86,7 @@
 ---
 
 <div align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=bailong-Hakuryu.bailong-Hakuryu&left_text=访问&left_color=F06292&right_color=101218" alt="主页访问次数"/>
-  <img src="https://img.shields.io/github/followers/bailong-Hakuryu?style=flat-square&label=Followers&color=9FA8DA" alt="GitHub followers"/>
+  <img src="./assets/profile-footer.svg" alt="白龙 · Bailong | Building memory for agents" width="100%"/>
   <br/><br/>
-  <sub>白龙 · Bailong · Building memory for agents</sub>
+  <a href="https://github.com/bailong-Hakuryu"><img src="https://img.shields.io/github/followers/bailong-Hakuryu?style=for-the-badge&label=Followers&color=9FA8DA&labelColor=101218" alt="GitHub followers"/></a>
 </div>
