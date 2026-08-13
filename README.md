@@ -7,7 +7,11 @@
 <div align="center">
 
   <a href="https://github.com/bailong-Hakuryu">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=F06292&center=true&vCenter=true&width=800&lines=%E7%99%BD%E9%BE%99+%C2%B7+Bailong+%E2%99%A1;%E4%B8%80%E6%9D%A1%E5%9C%A8%E8%BF%BD%E5%AF%BB%E5%9C%A3%E6%9D%AF%E8%B7%AF%E4%B8%8A%E7%9A%84%E9%BE%99+(%EF%BD%A1%EF%BD%A5%CF%89%EF%BD%A5%EF%BD%A1);AI+%C2%B7+LLM+%C2%B7+%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86%E5%BC%95%E6%93%8E;%E9%93%B8%E9%80%A0%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9C%A3%E6%9D%AF+%E2%9C%A7*%3A%EF%BD%A5%EF%BE%9F" alt="白龙 · Bailong" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=160&section=header&color=gradient&customColorList=240,98,146,159,168,218,195,139,199,248,187,208&text=%E7%99%BD%E9%BE%99%20%C2%B7%20Bailong&fontSize=48&fontColor=ffffff&desc=%E4%B8%80%E6%9D%A1%E5%9C%A8%E8%BF%BD%E5%AF%BB%E5%9C%A3%E6%9D%AF%E8%B7%AF%E4%B8%8A%E7%9A%84%E9%BE%99&descSize=20&descAlignY=60&descColor=ffffff&animation=twinkling" alt="白龙 · Bailong 横幅" width="100%"/>
+  </a>
+
+  <a href="https://github.com/bailong-Hakuryu">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=F06292,9FA8DA,FF8FAB,C38BC7&center=true&vCenter=true&width=800&lines=%E7%99%BD%E9%BE%99+%C2%B7+Bailong+%E2%99%A1;%E4%B8%80%E6%9D%A1%E5%9C%A8%E8%BF%BD%E5%AF%BB%E5%9C%A3%E6%9D%AF%E8%B7%AF%E4%B8%8A%E7%9A%84%E9%BE%99+(%EF%BD%A1%EF%BD%A5%CF%89%EF%BD%A5%EF%BD%A1);AI+%C2%B7+LLM+%C2%B7+%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86%E5%BC%95%E6%93%8E;%E9%93%B8%E9%80%A0%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%9C%A3%E6%9D%AF+%E2%9C%A7*%3A%EF%BD%A5%EF%BE%9F" alt="白龙 · Bailong" />
   </a>
 
   <br/>
@@ -76,6 +80,11 @@
   <img src="https://img.shields.io/badge/Agent-EC4899?style=flat-square&logo=robotframework&logoColor=white" alt="Agent"/>
   <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
+  <br/><br/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python,cpp,powershell,git,github,vscode&theme=dark&perline=6"/>
+    <img src="https://skillicons.dev/icons?i=python,cpp,powershell,git,github,vscode&theme=light&perline=6" alt="技术栈图标"/>
+  </picture>
 </div>
 
 ---
@@ -84,11 +93,19 @@
 
 <div align="center">
 
-  <a href="https://github.com/bailong-Hakuryu/bailong-Hakuryu/actions">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/main/metrics-dark.svg"/>
     <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/main/metrics.svg" alt="白龙的 GitHub 统计" width="480"/>
-  </a>
+  </picture>
 
-  <p><sub>由 <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> + GitHub Actions 每日自动生成 · 数据每天更新 (｡•ᴗ•｡)</sub></p>
+  <br/>
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=bailong-Hakuryu&custom_title=%E6%9C%80%E8%BF%91%E7%9A%84%E8%B4%A1%E7%8C%AE%E6%B4%BB%E5%8A%A8&hide_border=true&bg_color=1a1b27&color=f472b6&line=f472b6&point=ec4899&area=true&area_color=f472b6&title_color=f472b6&radius=8"/>
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=bailong-Hakuryu&custom_title=%E6%9C%80%E8%BF%91%E7%9A%84%E8%B4%A1%E7%8C%AE%E6%B4%BB%E5%8A%A8&hide_border=true&bg_color=ffffff&color=db2777&line=db2777&point=ec4899&area=true&area_color=ff8fab&title_color=db2777&radius=8" alt="最近的贡献活动"/>
+  </picture>
+
+  <p><sub>统计卡片由 <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> + GitHub Actions 每日自动生成 (｡•ᴗ•｡)</sub></p>
 
 </div>
 
@@ -118,6 +135,21 @@
     </td>
   </tr>
 </table>
+
+---
+
+### 贡献贪吃蛇 ☆*:.｡.o(≧▽≦)o.｡.:*☆
+
+<div align="center">
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/output/github-contribution-grid-snake-dark.svg"/>
+    <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/output/github-contribution-grid-snake.svg" alt="贡献贪吃蛇动画"/>
+  </picture>
+
+  <p><sub>由 <a href="https://github.com/Platane/snk">Platane/snk</a> 生成 · 每天自动更新</sub></p>
+
+</div>
 
 ---
 
