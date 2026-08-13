@@ -84,22 +84,11 @@
 
 <div align="center">
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=bailong-Hakuryu&show_icons=true&hide_border=true&bg_color=1a1b27&title_color=f472b6&icon_color=f472b6&text_color=c9d1d9&custom_title=%E7%99%BD%E9%BE%99%E7%9A%84%20GitHub%20%E7%BB%9F%E8%AE%A1"/>
-    <img src="https://github-readme-stats.vercel.app/api?username=bailong-Hakuryu&show_icons=true&hide_border=true&bg_color=ffffff&title_color=d63384&icon_color=ec4899&text_color=374151&custom_title=%E7%99%BD%E9%BE%99%E7%9A%84%20GitHub%20%E7%BB%9F%E8%AE%A1" alt="GitHub Stats"/>
-  </picture>
+  <a href="https://github.com/bailong-Hakuryu/bailong-Hakuryu/actions">
+    <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/main/metrics.svg" alt="白龙的 GitHub 统计" width="480"/>
+  </a>
 
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=bailong-Hakuryu&layout=compact&langs_count=6&hide_border=true&bg_color=1a1b27&title_color=f472b6&text_color=c9d1d9&custom_title=%E6%8A%80%E6%9C%AF%E6%A0%88%20Top%20Languages"/>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bailong-Hakuryu&layout=compact&langs_count=6&hide_border=true&bg_color=ffffff&title_color=d63384&text_color=374151&custom_title=%E6%8A%80%E6%9C%AF%E6%A0%88%20Top%20Languages" alt="Top Languages"/>
-  </picture>
-
-  <br/>
-
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=bailong-Hakuryu&hide_border=true&background=1a1b27&ring=f472b6&fire=ec4899&currStreakLabel=f472b6&currStreakNum=ffffff&sideNums=9ca3af&sideLabels=9ca3af&dates=6b7280&stroke=30363d"/>
-    <img src="https://streak-stats.demolab.com/?user=bailong-Hakuryu&hide_border=true&background=ffffff&ring=db2777&fire=ec4899&currStreakLabel=db2777&currStreakNum=111827&sideNums=6b7280&sideLabels=6b7280&dates=9ca3af&stroke=e5e7eb" alt="GitHub Streak"/>
-  </picture>
+  <p><sub>由 <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> + GitHub Actions 每日自动生成 · 数据每天更新 (｡•ᴗ•｡)</sub></p>
 
 </div>
 
@@ -107,16 +96,34 @@
 
 ### 精选项目 Featured Projects ☆ﾐ(o*･ω･)ﾉ
 
-<p align="center">
-  <a href="https://github.com/bailong-Hakuryu/E.R.I.I"><img height="130" src="https://github-readme-stats.vercel.app/api/pin/?username=bailong-Hakuryu&repo=E.R.I.I&bg_color=1a1b27&title_color=f472b6&icon_color=ec4899&text_color=c9d1d9&hide_border=true&description_lines_count=2" alt="E.R.I.I"/></a>
-  <a href="https://github.com/bailong-Hakuryu/UpdateLock"><img height="130" src="https://github-readme-stats.vercel.app/api/pin/?username=bailong-Hakuryu&repo=UpdateLock&bg_color=1a1b27&title_color=f472b6&icon_color=ec4899&text_color=c9d1d9&hide_border=true&description_lines_count=2" alt="UpdateLock"/></a>
-  <a href="https://github.com/bailong-Hakuryu/KouriChat"><img height="130" src="https://github-readme-stats.vercel.app/api/pin/?username=bailong-Hakuryu&repo=KouriChat&bg_color=1a1b27&title_color=f472b6&icon_color=ec4899&text_color=c9d1d9&hide_border=true&description_lines_count=2" alt="KouriChat"/></a>
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/bailong-Hakuryu/E.R.I.I"><b>E.R.I.I</b></a><br/>
+      <sub>LLM Agent 双轨长期记忆引擎</sub><br/>
+      <sub>Python · 零依赖 · RAG</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/bailong-Hakuryu/E.R.I.I?style=flat-square&label=%E2%98%86&color=FF8FAB"/>
+    </td>
+    <td align="center">
+      <a href="https://github.com/bailong-Hakuryu/UpdateLock"><b>UpdateLock</b></a><br/>
+      <sub>微信与通用软件防自动更新工具</sub><br/>
+      <sub>C++ · Windows · ACL</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/bailong-Hakuryu/UpdateLock?style=flat-square&label=%E2%98%86&color=FF8FAB"/>
+    </td>
+    <td align="center">
+      <a href="https://github.com/bailong-Hakuryu/KouriChat"><b>KouriChat</b></a><br/>
+      <sub>基于 LLM 的情感陪伴程序</sub><br/>
+      <sub>Python · LLM · 角色扮演</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/bailong-Hakuryu/KouriChat?style=flat-square&label=%E2%98%86&color=FF8FAB"/>
+    </td>
+  </tr>
+</table>
 
 ---
 
 <div align="center">
-  <img src="https://count.getloli.com/get/@bailong-Hakuryu?theme=asoul" alt="访客计数"/>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=bailong-Hakuryu.bailong-Hakuryu&left_text=%E8%A2%AB%E7%9C%8B%E8%BF%87%E7%9A%84%E6%AC%A1%E6%95%B0&left_color=F06292&right_color=9FA8DA" alt="访客计数"/>
+  <img src="https://img.shields.io/github/followers/bailong-Hakuryu?style=flat-square&label=Followers&color=F48FB1" alt="Followers"/>
   <br/><br/>
   <sub>感谢 <b>Nachoneko</b> 的陪伴与启发 ♡ ｜ Made with ♡ ｜ © 2023–2026 白龙</sub>
 </div>
