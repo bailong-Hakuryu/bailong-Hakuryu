@@ -17,18 +17,36 @@
   </p>
 
   <p>
-    <code>MEMORY SYNCED</code>&nbsp;&nbsp;
-    <code>CURRENT QUEST: E.R.I.I</code>&nbsp;&nbsp;
-    <code>BASE: WINDOWS</code>
-  </p>
-
-  <p>
     <a href="https://xn--9wyy09f.cn"><img alt="Blog" src="https://img.shields.io/badge/BLOG-%E7%99%BD%E9%BE%99.cn-11131A?style=flat-square&logo=googlechrome&logoColor=white&labelColor=F06292"/></a>
     <a href="https://x.com/Hakuryubailong"><img alt="X" src="https://img.shields.io/badge/X-@Hakuryubailong-11131A?style=flat-square&logo=x&logoColor=white&labelColor=9FA8DA"/></a>
     <a href="mailto:bailong996633@gmail.com"><img alt="Email" src="https://img.shields.io/badge/MAIL-GMAIL-11131A?style=flat-square&logo=gmail&logoColor=white&labelColor=83D8D0"/></a>
   </p>
 
 </div>
+
+<div align="center">
+  <sub>✦ MISSION CONSOLE // 当前运行状态 ✦</sub>
+</div>
+
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <sub>MEMORY CORE</sub><br/>
+      <b>SYNCED</b><br/>
+      <code>E.R.I.I</code>
+    </td>
+    <td width="34%" align="center">
+      <sub>CURRENT QUEST</sub><br/>
+      <b>BUILDING</b><br/>
+      <code>LONG-TERM MEMORY</code>
+    </td>
+    <td width="33%" align="center">
+      <sub>BASE SYSTEM</sub><br/>
+      <b>WINDOWS</b><br/>
+      <code>PYTHON · C++</code>
+    </td>
+  </tr>
+</table>
 
 ## ✦ Character File / 角色档案
 
