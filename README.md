@@ -4,51 +4,56 @@
     <img src="./assets/banner.jpg" alt="白龙 · Bailong 主题横幅（角色插画）" width="100%"/>
   </a>
 
-  <br/><br/>
+  <br/>
+
+  <sub>✦ BAILONG ARCHIVE // MEMORY ENGINEERING UNIT ✦</sub>
 
   <h1>白龙 · Bailong</h1>
 
-  <b>让 Agent 记得走过的路，也让工具安静地解决问题。</b>
+  <p><strong>让 Agent 记得走过的路，也让工具安静地解决问题。</strong></p>
 
   <p>
-    <code>MEMORY SYNCED</code>&nbsp;&nbsp;<code>CURRENT QUEST: E.R.I.I</code>&nbsp;&nbsp;<code>BASE: WINDOWS</code>
+    <code>MEMORY SYNCED</code>&nbsp;&nbsp;
+    <code>CURRENT QUEST: E.R.I.I</code>&nbsp;&nbsp;
+    <code>BASE: WINDOWS</code>
   </p>
 
   <p>
-    <a href="https://xn--9wyy09f.cn"><img alt="Blog" src="https://img.shields.io/badge/BLOG-%E7%99%BD%E9%BE%99.cn-11131A?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=F06292"/></a>
-    <a href="https://x.com/Hakuryubailong"><img alt="X" src="https://img.shields.io/badge/X-@Hakuryubailong-11131A?style=for-the-badge&logo=x&logoColor=white&labelColor=9FA8DA"/></a>
-    <a href="mailto:bailong996633@gmail.com"><img alt="Email" src="https://img.shields.io/badge/MAIL-GMAIL-11131A?style=for-the-badge&logo=gmail&logoColor=white&labelColor=83D8D0"/></a>
+    <a href="https://xn--9wyy09f.cn"><img alt="Blog" src="https://img.shields.io/badge/BLOG-%E7%99%BD%E9%BE%99.cn-11131A?style=flat-square&logo=googlechrome&logoColor=white&labelColor=F06292"/></a>
+    <a href="https://x.com/Hakuryubailong"><img alt="X" src="https://img.shields.io/badge/X-@Hakuryubailong-11131A?style=flat-square&logo=x&logoColor=white&labelColor=9FA8DA"/></a>
+    <a href="mailto:bailong996633@gmail.com"><img alt="Email" src="https://img.shields.io/badge/MAIL-GMAIL-11131A?style=flat-square&logo=gmail&logoColor=white&labelColor=83D8D0"/></a>
   </p>
 
 </div>
 
-## Character File / 角色档案
+## ✦ Character File / 角色档案
 
 <table>
   <tr>
-    <td width="60%" valign="top">
-      <h3>Current Quest / 当前主线</h3>
+    <td width="64%" valign="top">
+      <h3>◈ Current Quest / 当前主线</h3>
       <p>正在开发 <a href="https://github.com/bailong-Hakuryu/E.R.I.I"><b>E.R.I.I</b></a>：面向 LLM Agent 的双轨长期记忆引擎。它不只保存对话，还让记忆能够形成、巩固、检索，并在后续任务中真正发挥作用。</p>
-      <blockquote>圣杯不是杯子，是会被记住的记忆。</blockquote>
+      <blockquote><b>Memory Core:</b> 圣杯不是杯子，是会被记住的记忆。</blockquote>
       <p>
         <code>CLASS</code> Memory Engineer<br/>
         <code>FOCUS</code> Agent Memory · RAG · Evaluation<br/>
         <code>GEAR</code> Python · C++ · PowerShell<br/>
         <code>BASE</code> Windows · 中文 / English
       </p>
+      <p><sub>STATUS // 把长期记忆做成可验证、可维护、可继续生长的基础设施。</sub></p>
     </td>
-    <td width="40%" align="center" valign="top">
-      <img src="./assets/portrait.png" width="240" alt="白龙的角色立绘"/>
-      <p><sub>感谢 <b>Nachoneko</b> 的陪伴与启发 ♡</sub></p>
+    <td width="36%" align="center" valign="top">
+      <img src="./assets/portrait.png" width="210" alt="白龙的角色立绘"/>
+      <p><sub><code>AVATAR</code> memory analyst<br/>感谢 <b>Nachoneko</b> 的陪伴与启发 ♡</sub></p>
     </td>
   </tr>
 </table>
 
-## Quest Log / 项目
+## ✦ Selected Quests / 精选项目
 
 <table>
   <tr>
-    <td width="22%" valign="top"><b>MAIN QUEST</b><br/><code>E.R.I.I</code></td>
+    <td width="22%" valign="top"><b>01 · MAIN QUEST</b><br/><code>ACTIVE</code></td>
     <td width="78%" valign="top">
       <b><a href="https://github.com/bailong-Hakuryu/E.R.I.I">双轨长期记忆引擎</a></b><br/>
       为 LLM Agent 构建可形成、巩固与检索的长期记忆。<br/>
@@ -56,26 +61,28 @@
     </td>
   </tr>
   <tr>
-    <td width="22%" valign="top"><b>GUARD QUEST</b><br/><code>UpdateLock</code></td>
+    <td width="22%" valign="top"><b>02 · GUARD QUEST</b><br/><code>TOOLING</code></td>
     <td width="78%" valign="top">
       <b><a href="https://github.com/bailong-Hakuryu/UpdateLock">Windows 更新守卫</a></b><br/>
-      控制 Windows 软件的非预期自动更新。<br/>
+      控制 Windows 软件的非预期自动更新，把系统控制权交还给用户。<br/>
       <code>C++</code> <code>Windows</code> <code>ACL</code>
     </td>
   </tr>
   <tr>
-    <td width="22%" valign="top"><b>STORY QUEST</b><br/><code>KouriChat</code></td>
+    <td width="22%" valign="top"><b>03 · STORY QUEST</b><br/><code>RESEARCH</code></td>
     <td width="78%" valign="top">
       <b><a href="https://github.com/bailong-Hakuryu/KouriChat">角色交互与长期陪伴</a></b><br/>
-      探索基于 LLM 的长期角色关系。<br/>
+      探索基于 LLM 的长期角色关系，让对话拥有连续的上下文。<br/>
       <code>Python</code> <code>LLM</code> <code>Character AI</code>
     </td>
   </tr>
 </table>
 
-## Equipment / 技术栈
+## ✦ Core Stack / 核心装备
 
 <div align="center">
+
+  <p><sub>LANGUAGE // SYSTEM // DOMAIN</sub></p>
 
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
@@ -95,9 +102,11 @@
 
 </div>
 
-## Adventure Record / GitHub 动态
+## ✦ Adventure Record / GitHub 动态
 
 <div align="center">
+
+  <p><sub>活动记录是旁证，正在构建的项目才是主线。</sub></p>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/main/metrics-dark.svg"/>
@@ -116,7 +125,7 @@
 ---
 
 <div align="center">
-  <p><strong>白龙 · Bailong</strong><br/><sub>Building memory for agents · 中文 / English</sub></p>
+  <p><strong>✦ END OF FILE // 白龙 · Bailong ✦</strong><br/><sub>Building memory for agents · 中文 / English</sub></p>
   <p>
     <a href="https://xn--9wyy09f.cn">BLOG</a>&nbsp; · &nbsp;
     <a href="https://x.com/Hakuryubailong">X</a>&nbsp; · &nbsp;
