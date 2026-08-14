@@ -16,7 +16,7 @@
     </linearGradient>
 
     <clipPath id="clip-1">
-      <rect x="248" y="0" width="0" height="64">
+      <rect x="248" y="0" width="424" height="64">
         <animate attributeName="width" values="0;424;424;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
       </rect>
     </clipPath>
@@ -70,10 +70,10 @@
     }
   </style>
 
-  <g opacity="0">
+  <g opacity="1">
     <animate id="line-1" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
     <text class="typing-text" x="248" y="41" clip-path="url(#clip-1)">Building memory for LLM agents</text>
-    <rect class="cursor" x="248" y="14" width="3" height="34" rx="1">
+    <rect class="cursor" x="672" y="14" width="3" height="34" rx="1">
       <animate attributeName="x" values="248;672;672;248;248" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
       <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
     </rect>
