@@ -13,6 +13,10 @@
   <p><strong>让 Agent 记得走过的路，也让工具安静地解决问题。</strong></p>
 
   <p>
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=F06292&center=true&vCenter=true&width=720&height=34&lines=Building+memory+for+LLM+agents;E.R.I.I+%2F+dual-track+long-term+memory;Windows+tooling+%2B+AI+experiments" alt="Building memory for LLM agents; E.R.I.I dual-track long-term memory; Windows tooling and AI experiments"/>
+  </p>
+
+  <p>
     <code>MEMORY SYNCED</code>&nbsp;&nbsp;
     <code>CURRENT QUEST: E.R.I.I</code>&nbsp;&nbsp;
     <code>BASE: WINDOWS</code>
