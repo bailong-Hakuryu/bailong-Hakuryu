@@ -40,28 +40,28 @@
   <tr>
     <td width="33%" align="center">
       <sub>MEMORY CORE</sub><br/>
-      <b>SYNCED</b><br/>
+      <img src="https://img.shields.io/badge/MEMORY-SYNCED-83D8D0?style=flat-square&labelColor=11131A" alt="Memory core synced"/><br/>
       <code>E.R.I.I</code>
     </td>
     <td width="34%" align="center">
       <sub>CURRENT QUEST</sub><br/>
-      <b>BUILDING</b><br/>
+      <img src="https://img.shields.io/badge/QUEST-BUILDING-F06292?style=flat-square&labelColor=11131A" alt="Current quest building"/><br/>
       <code>LONG-TERM MEMORY</code>
     </td>
     <td width="33%" align="center">
       <sub>BASE SYSTEM</sub><br/>
-      <b>WINDOWS</b><br/>
+      <img src="https://img.shields.io/badge/BASE-WINDOWS-9FA8DA?style=flat-square&labelColor=11131A" alt="Base system Windows"/><br/>
       <code>PYTHON · C++</code>
     </td>
   </tr>
 </table>
 
-## ✦ Character File / 角色档案
+## ✦ 01 // Character File / 角色档案
 
 <table width="100%">
   <tr>
     <td width="64%" valign="top">
-      <h3>◈ Current Quest / 当前主线</h3>
+      <h3>◈ MAIN ARC // Current Quest / 当前主线</h3>
       <p>正在开发 <a href="https://github.com/bailong-Hakuryu/E.R.I.I"><b>E.R.I.I</b></a>：面向 LLM Agent 的双轨长期记忆引擎。它不只保存对话，还让记忆能够形成、巩固、检索，并在后续任务中真正发挥作用。</p>
       <blockquote><b>Memory Core:</b> 圣杯不是杯子，是万能的许愿机 O(≧口≦)O。</blockquote>
       <p>
@@ -80,11 +80,17 @@
   </tr>
 </table>
 
-## ✦ Selected Quests / 精选项目
+<details>
+  <summary>✦ Memory Doctrine / 记忆准则</summary>
+  <p>对话只是输入，记忆才是让下一次行动更接近答案的力量。</p>
+  <p><code>RECALL</code> 读取经验　<code>CONSOLIDATE</code> 巩固经验　<code>GROW</code> 让经验继续生长</p>
+</details>
+
+## ✦ 02 // Selected Quests / 精选项目
 
 <table width="100%">
   <tr>
-    <td width="22%" valign="top"><b>01 · MAIN QUEST</b><br/><code>ACTIVE</code></td>
+    <td width="22%" valign="top"><img src="https://img.shields.io/badge/01-MAIN%20QUEST-F06292?style=flat-square&labelColor=11131A" alt="Main quest"/><br/><code>ACTIVE</code></td>
     <td width="78%" valign="top">
       <b><a href="https://github.com/bailong-Hakuryu/E.R.I.I">双轨长期记忆引擎</a></b><br/>
       为 LLM Agent 构建可形成、巩固与检索的长期记忆。<br/>
@@ -92,7 +98,7 @@
     </td>
   </tr>
   <tr>
-    <td width="22%" valign="top"><b>02 · GUARD QUEST</b><br/><code>TOOLING</code></td>
+    <td width="22%" valign="top"><img src="https://img.shields.io/badge/02-GUARD%20QUEST-83D8D0?style=flat-square&labelColor=11131A" alt="Guard quest"/><br/><code>TOOLING</code></td>
     <td width="78%" valign="top">
       <b><a href="https://github.com/bailong-Hakuryu/UpdateLock">Windows 更新守卫</a></b><br/>
       控制 Windows 软件的非预期自动更新，把系统控制权交还给用户。<br/>
@@ -100,7 +106,7 @@
     </td>
   </tr>
   <tr>
-    <td width="22%" valign="top"><b>03 · STORY QUEST</b><br/><code>RESEARCH</code></td>
+    <td width="22%" valign="top"><img src="https://img.shields.io/badge/03-STORY%20QUEST-9FA8DA?style=flat-square&labelColor=11131A" alt="Story quest"/><br/><code>RESEARCH</code></td>
     <td width="78%" valign="top">
       <b><a href="https://github.com/bailong-Hakuryu/KouriChat">角色交互与长期陪伴</a></b><br/>
       探索基于 LLM 的长期角色关系，让对话拥有连续的上下文。<br/>
@@ -109,7 +115,7 @@
   </tr>
 </table>
 
-## ✦ Core Stack / 核心装备
+## ✦ 03 // Core Stack / 核心装备
 
 <div align="center">
 
@@ -133,7 +139,7 @@
 
 </div>
 
-## ✦ Adventure Record / GitHub 动态
+## ✦ 04 // Adventure Record / GitHub 动态
 
 <div align="center">
 
@@ -163,4 +169,5 @@
     <a href="mailto:bailong996633@gmail.com">MAIL</a>&nbsp; · &nbsp;
     <a href="https://github.com/bailong-Hakuryu">GitHub</a>
   </p>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=F06292&height=90&section=footer&animation=fadeIn" alt="" width="100%"/>
 </div>
