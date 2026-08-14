@@ -4,57 +4,18 @@
 
   <defs>
     <linearGradient id="text-gradient" gradientUnits="userSpaceOnUse" x1="180" y1="0" x2="740" y2="0">
-      <stop offset="0" stop-color="#EC407A">
-        <animate attributeName="stop-color" values="#EC407A;#009688;#7E57C2;#EC407A" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="0.5" stop-color="#7E57C2">
-        <animate attributeName="stop-color" values="#7E57C2;#EC407A;#009688;#7E57C2" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="1" stop-color="#009688">
-        <animate attributeName="stop-color" values="#009688;#7E57C2;#EC407A;#009688" dur="9s" repeatCount="indefinite"/>
-      </stop>
+      <stop offset="0" stop-color="#EC407A"/>
+      <stop offset="0.5" stop-color="#7E57C2"/>
+      <stop offset="1" stop-color="#009688"/>
     </linearGradient>
-
-    <clipPath id="clip-1">
-      <rect x="248" y="0" width="424" height="64">
-        <animate attributeName="width" values="0;424;424;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="clip-2">
-      <rect x="205" y="0" width="0" height="64">
-        <animate attributeName="width" values="0;510;510;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-1.end" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="clip-3">
-      <rect x="250" y="0" width="0" height="64">
-        <animate attributeName="width" values="0;420;420;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-2.end" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="clip-4">
-      <rect x="276" y="0" width="0" height="64">
-        <animate attributeName="width" values="0;368;368;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-3.end" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="clip-5">
-      <rect x="276" y="0" width="0" height="64">
-        <animate attributeName="width" values="0;368;368;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-4.end" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="clip-6">
-      <rect x="253" y="0" width="0" height="64">
-        <animate attributeName="width" values="0;414;414;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-5.end" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="clip-7">
-      <rect x="310" y="0" width="0" height="64">
-        <animate attributeName="width" values="0;300;300;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-6.end" fill="freeze"/>
-      </rect>
-    </clipPath>
-    <clipPath id="clip-8">
-      <rect x="276" y="0" width="0" height="64">
-        <animate attributeName="width" values="0;368;368;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-7.end" fill="freeze"/>
-      </rect>
-    </clipPath>
+    <clipPath id="clip-1"><rect id="clip-1-rect" x="248" y="0" width="424" height="64"/></clipPath>
+    <clipPath id="clip-2"><rect id="clip-2-rect" x="205" y="0" width="0" height="64"/></clipPath>
+    <clipPath id="clip-3"><rect id="clip-3-rect" x="250" y="0" width="0" height="64"/></clipPath>
+    <clipPath id="clip-4"><rect id="clip-4-rect" x="276" y="0" width="0" height="64"/></clipPath>
+    <clipPath id="clip-5"><rect id="clip-5-rect" x="276" y="0" width="0" height="64"/></clipPath>
+    <clipPath id="clip-6"><rect id="clip-6-rect" x="253" y="0" width="0" height="64"/></clipPath>
+    <clipPath id="clip-7"><rect id="clip-7-rect" x="310" y="0" width="0" height="64"/></clipPath>
+    <clipPath id="clip-8"><rect id="clip-8-rect" x="276" y="0" width="0" height="64"/></clipPath>
   </defs>
 
   <style>
@@ -65,80 +26,96 @@
       font-weight: 600;
       letter-spacing: 0.5px;
     }
+    .line-1 { opacity: 1; animation: show-1 35.2s linear infinite; }
+    .line-2 { opacity: 0; animation: show-2 35.2s linear infinite; }
+    .line-3 { opacity: 0; animation: show-3 35.2s linear infinite; }
+    .line-4 { opacity: 0; animation: show-4 35.2s linear infinite; }
+    .line-5 { opacity: 0; animation: show-5 35.2s linear infinite; }
+    .line-6 { opacity: 0; animation: show-6 35.2s linear infinite; }
+    .line-7 { opacity: 0; animation: show-7 35.2s linear infinite; }
+    .line-8 { opacity: 0; animation: show-8 35.2s linear infinite; }
+
     .cursor {
       fill: #00a896;
+      animation: blink 0.72s step-end infinite;
     }
+    .cursor-1 { animation: move-1 35.2s steps(28, end) infinite, blink 0.72s step-end infinite; }
+    .cursor-2 { animation: move-2 35.2s steps(34, end) infinite, blink 0.72s step-end infinite; }
+    .cursor-3 { animation: move-3 35.2s steps(30, end) infinite, blink 0.72s step-end infinite; }
+    .cursor-4 { animation: move-4 35.2s steps(16, end) infinite, blink 0.72s step-end infinite; }
+    .cursor-5 { animation: move-5 35.2s steps(16, end) infinite, blink 0.72s step-end infinite; }
+    .cursor-6 { animation: move-6 35.2s steps(18, end) infinite, blink 0.72s step-end infinite; }
+    .cursor-7 { animation: move-7 35.2s steps(13, end) infinite, blink 0.72s step-end infinite; }
+    .cursor-8 { animation: move-8 35.2s steps(16, end) infinite, blink 0.72s step-end infinite; }
+
+    #clip-1-rect { animation: reveal-1 35.2s steps(28, end) infinite; }
+    #clip-2-rect { animation: reveal-2 35.2s steps(34, end) infinite; }
+    #clip-3-rect { animation: reveal-3 35.2s steps(30, end) infinite; }
+    #clip-4-rect { animation: reveal-4 35.2s steps(16, end) infinite; }
+    #clip-5-rect { animation: reveal-5 35.2s steps(16, end) infinite; }
+    #clip-6-rect { animation: reveal-6 35.2s steps(18, end) infinite; }
+    #clip-7-rect { animation: reveal-7 35.2s steps(13, end) infinite; }
+    #clip-8-rect { animation: reveal-8 35.2s steps(16, end) infinite; }
+
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes show-1 { 0%, 11% { opacity: 1; } 12.5%, 100% { opacity: 0; } }
+    @keyframes show-2 { 0%, 12.4% { opacity: 0; } 12.5%, 23.5% { opacity: 1; } 25%, 100% { opacity: 0; } }
+    @keyframes show-3 { 0%, 24.9% { opacity: 0; } 25%, 36% { opacity: 1; } 37.5%, 100% { opacity: 0; } }
+    @keyframes show-4 { 0%, 37.4% { opacity: 0; } 37.5%, 48.5% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes show-5 { 0%, 49.9% { opacity: 0; } 50%, 61% { opacity: 1; } 62.5%, 100% { opacity: 0; } }
+    @keyframes show-6 { 0%, 62.4% { opacity: 0; } 62.5%, 73.5% { opacity: 1; } 75%, 100% { opacity: 0; } }
+    @keyframes show-7 { 0%, 74.9% { opacity: 0; } 75%, 86% { opacity: 1; } 87.5%, 100% { opacity: 0; } }
+    @keyframes show-8 { 0%, 87.4% { opacity: 0; } 87.5%, 98.5% { opacity: 1; } 100% { opacity: 0; } }
+
+    @keyframes reveal-1 { 0%, 1% { width: 0; } 6%, 11% { width: 424px; } 12.5%, 100% { width: 0; } }
+    @keyframes reveal-2 { 0%, 12.5%, 13.5% { width: 0; } 18.5%, 23.5% { width: 510px; } 25%, 100% { width: 0; } }
+    @keyframes reveal-3 { 0%, 25%, 26% { width: 0; } 31%, 36% { width: 420px; } 37.5%, 100% { width: 0; } }
+    @keyframes reveal-4 { 0%, 37.5%, 38.5% { width: 0; } 43.5%, 48.5% { width: 368px; } 50%, 100% { width: 0; } }
+    @keyframes reveal-5 { 0%, 50%, 51% { width: 0; } 56%, 61% { width: 368px; } 62.5%, 100% { width: 0; } }
+    @keyframes reveal-6 { 0%, 62.5%, 63.5% { width: 0; } 68.5%, 73.5% { width: 414px; } 75%, 100% { width: 0; } }
+    @keyframes reveal-7 { 0%, 75%, 76% { width: 0; } 81%, 86% { width: 300px; } 87.5%, 100% { width: 0; } }
+    @keyframes reveal-8 { 0%, 87.5%, 88.5% { width: 0; } 93.5%, 98.5% { width: 368px; } 100% { width: 0; } }
+
+    @keyframes move-1 { 0%, 1% { transform: translateX(-424px); } 6%, 11% { transform: translateX(0); } 12.5%, 100% { transform: translateX(-424px); } }
+    @keyframes move-2 { 0%, 12.5%, 13.5% { transform: translateX(-510px); } 18.5%, 23.5% { transform: translateX(0); } 25%, 100% { transform: translateX(-510px); } }
+    @keyframes move-3 { 0%, 25%, 26% { transform: translateX(-420px); } 31%, 36% { transform: translateX(0); } 37.5%, 100% { transform: translateX(-420px); } }
+    @keyframes move-4 { 0%, 37.5%, 38.5% { transform: translateX(-368px); } 43.5%, 48.5% { transform: translateX(0); } 50%, 100% { transform: translateX(-368px); } }
+    @keyframes move-5 { 0%, 50%, 51% { transform: translateX(-368px); } 56%, 61% { transform: translateX(0); } 62.5%, 100% { transform: translateX(-368px); } }
+    @keyframes move-6 { 0%, 62.5%, 63.5% { transform: translateX(-414px); } 68.5%, 73.5% { transform: translateX(0); } 75%, 100% { transform: translateX(-414px); } }
+    @keyframes move-7 { 0%, 75%, 76% { transform: translateX(-300px); } 81%, 86% { transform: translateX(0); } 87.5%, 100% { transform: translateX(-300px); } }
+    @keyframes move-8 { 0%, 87.5%, 88.5% { transform: translateX(-368px); } 93.5%, 98.5% { transform: translateX(0); } 100% { transform: translateX(-368px); } }
   </style>
 
-  <g opacity="1">
-    <animate id="line-1" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
+  <g class="line-1" opacity="1">
     <text class="typing-text" x="248" y="41" clip-path="url(#clip-1)">Building memory for LLM agents</text>
-    <rect class="cursor" x="672" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="248;672;672;248;248" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-1" x="672" y="14" width="3" height="34" rx="1"/>
   </g>
-
-  <g opacity="0">
-    <animate id="line-2" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-1.end" fill="freeze"/>
+  <g class="line-2" opacity="0">
     <text class="typing-text" x="205" y="41" clip-path="url(#clip-2)">E.R.I.I / dual-track long-term memory</text>
-    <rect class="cursor" x="205" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="205;715;715;205;205" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-1.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-2" x="715" y="14" width="3" height="34" rx="1"/>
   </g>
-
-  <g opacity="0">
-    <animate id="line-3" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-2.end" fill="freeze"/>
+  <g class="line-3" opacity="0">
     <text class="typing-text" x="250" y="41" clip-path="url(#clip-3)">Windows tooling + AI experiments</text>
-    <rect class="cursor" x="250" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="250;670;670;250;250" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-2.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-3" x="670" y="14" width="3" height="34" rx="1"/>
   </g>
-
-  <g opacity="0">
-    <animate id="line-4" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-3.end" fill="freeze"/>
+  <g class="line-4" opacity="0">
     <text class="typing-text" x="276" y="41" clip-path="url(#clip-4)">既然选择了远方，便只顾风雨兼程。</text>
-    <rect class="cursor" x="276" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="276;644;644;276;276" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-3.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-4" x="644" y="14" width="3" height="34" rx="1"/>
   </g>
-
-  <g opacity="0">
-    <animate id="line-5" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-4.end" fill="freeze"/>
+  <g class="line-5" opacity="0">
     <text class="typing-text" x="276" y="41" clip-path="url(#clip-5)">路漫漫其修远兮，吾将上下而求索。</text>
-    <rect class="cursor" x="276" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="276;644;644;276;276" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-4.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-5" x="644" y="14" width="3" height="34" rx="1"/>
   </g>
-
-  <g opacity="0">
-    <animate id="line-6" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-5.end" fill="freeze"/>
+  <g class="line-6" opacity="0">
     <text class="typing-text" x="253" y="41" clip-path="url(#clip-6)">知我者谓我心忧，不知我者谓我何求。</text>
-    <rect class="cursor" x="253" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="253;667;667;253;253" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-5.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-6" x="667" y="14" width="3" height="34" rx="1"/>
   </g>
-
-  <g opacity="0">
-    <animate id="line-7" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-6.end" fill="freeze"/>
+  <g class="line-7" opacity="0">
     <text class="typing-text" x="310" y="41" clip-path="url(#clip-7)">天行健，君子以自强不息。</text>
-    <rect class="cursor" x="310" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="310;610;610;310;310" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-6.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-7" x="610" y="14" width="3" height="34" rx="1"/>
   </g>
-
-  <g opacity="0">
-    <animate id="line-8" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-7.end" fill="freeze"/>
+  <g class="line-8" opacity="0">
     <text class="typing-text" x="276" y="41" clip-path="url(#clip-8)">长风破浪会有时，直挂云帆济沧海。</text>
-    <rect class="cursor" x="276" y="14" width="3" height="34" rx="1">
-      <animate attributeName="x" values="276;644;644;276;276" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-7.end" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="cursor cursor-8" x="644" y="14" width="3" height="34" rx="1"/>
   </g>
 </svg>

@@ -14,7 +14,7 @@
   <!--
   <img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+SC&size=22&duration=3000&pause=900&color=F06292&center=true&vCenter=true&width=860&height=46&cursor=true&cursorStyle=bar&cursorChar=%7C&cursorColor=83D8D0&fontWeight=600&letterSpacing=1&lines=Building+memory+for+LLM+agents;E.R.I.I+%2F+dual-track+long-term+memory;Windows+tooling+%2B+AI+experiments;%E6%97%A2%E7%84%B6%E9%80%89%E6%8B%A9%E4%BA%86%E8%BF%9C%E6%96%B9%EF%BC%8C%E4%BE%BF%E5%8F%AA%E9%A1%BE%E9%A3%8E%E9%9B%A8%E5%85%BC%E7%A8%8B%E3%80%82;%E8%B7%AF%E6%BC%AB%E6%BC%AB%E5%85%B6%E4%BF%AE%E8%BF%9C%E5%85%AE%EF%BC%8C%E5%90%BE%E5%B0%86%E4%B8%8A%E4%B8%8B%E8%80%8C%E6%B1%82%E7%B4%A2%E3%80%82;%E7%9F%A5%E6%88%91%E8%80%85%E8%B0%93%E6%88%91%E5%BF%83%E5%BF%A7%EF%BC%8C%E4%B8%8D%E7%9F%A5%E6%88%91%E8%80%85%E8%B0%93%E6%88%91%E4%BD%95%E6%B1%82%E3%80%82;%E5%A4%A9%E8%A1%8C%E5%81%A5%EF%BC%8C%E5%90%9B%E5%AD%90%E4%BB%A5%E8%87%AA%E5%BC%BA%E4%B8%8D%E6%81%AF%E3%80%82;%E9%95%BF%E9%A3%8E%E7%A0%B4%E6%B5%AA%E4%BC%9A%E6%9C%89%E6%97%B6%EF%BC%8C%E7%9B%B4%E6%8C%82%E4%BA%91%E5%B8%86%E6%B5%8E%E6%B2%A7%E6%B5%B7%E3%80%82" alt="Building memory for LLM agents; E.R.I.I dual-track long-term memory; Windows tooling and AI experiments; 既然选择了远方，便只顾风雨兼程；路漫漫其修远兮，吾将上下而求索；知我者谓我心忧，不知我者谓我何求；天行健，君子以自强不息；长风破浪会有时，直挂云帆济沧海"/><br/>
   -->
-  <img src="./assets/typing-banner.svg?v=2" alt="白龙的渐变动态打字介绍，包含工程方向与中文格言" width="920"/><br/>
+  <img src="./assets/typing-banner.svg?v=3" alt="白龙的渐变动态打字介绍，包含工程方向与中文格言" width="920"/><br/>
   <sub>AI Agent Memory · Windows Tooling · 中文 / English</sub>
 
 </div>
