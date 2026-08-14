@@ -11,6 +11,10 @@
   <b>让 Agent 记得走过的路，也让工具安静地解决问题。</b>
 
   <p>
+    <code>MEMORY SYNCED</code>&nbsp;&nbsp;<code>CURRENT QUEST: E.R.I.I</code>&nbsp;&nbsp;<code>BASE: WINDOWS</code>
+  </p>
+
+  <p>
     <a href="https://xn--9wyy09f.cn"><img alt="Blog" src="https://img.shields.io/badge/BLOG-%E7%99%BD%E9%BE%99.cn-11131A?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=F06292"/></a>
     <a href="https://x.com/Hakuryubailong"><img alt="X" src="https://img.shields.io/badge/X-@Hakuryubailong-11131A?style=for-the-badge&logo=x&logoColor=white&labelColor=9FA8DA"/></a>
     <a href="mailto:bailong996633@gmail.com"><img alt="Email" src="https://img.shields.io/badge/MAIL-GMAIL-11131A?style=for-the-badge&logo=gmail&logoColor=white&labelColor=83D8D0"/></a>
@@ -34,7 +38,7 @@
       </p>
     </td>
     <td width="40%" align="center" valign="top">
-      <img src="./assets/portrait.png" width="270" alt="白龙的角色立绘"/>
+      <img src="./assets/portrait.png" width="240" alt="白龙的角色立绘"/>
       <p><sub>感谢 <b>Nachoneko</b> 的陪伴与启发 ♡</sub></p>
     </td>
   </tr>
@@ -112,7 +116,11 @@
 ---
 
 <div align="center">
-  <img src="./assets/profile-footer.svg" alt="白龙 · Bailong | Building memory for agents" width="100%"/>
-  <br/><br/>
-  <a href="https://github.com/bailong-Hakuryu"><img src="https://img.shields.io/github/followers/bailong-Hakuryu?style=for-the-badge&label=FOLLOWERS&color=9FA8DA&labelColor=11131A" alt="GitHub followers"/></a>
+  <p><strong>白龙 · Bailong</strong><br/><sub>Building memory for agents · 中文 / English</sub></p>
+  <p>
+    <a href="https://xn--9wyy09f.cn">BLOG</a>&nbsp; · &nbsp;
+    <a href="https://x.com/Hakuryubailong">X</a>&nbsp; · &nbsp;
+    <a href="mailto:bailong996633@gmail.com">MAIL</a>&nbsp; · &nbsp;
+    <a href="https://github.com/bailong-Hakuryu">GitHub</a>
+  </p>
 </div>
