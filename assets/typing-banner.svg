@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="64" viewBox="0 0 920 64" role="img" aria-labelledby="title desc">
+  <title id="title">白龙的动态打字介绍</title>
+  <desc id="desc">工程方向与中文格言依次以渐变文字输入，并显示闪烁的竖线光标。</desc>
+
+  <defs>
+    <linearGradient id="text-gradient" gradientUnits="userSpaceOnUse" x1="180" y1="0" x2="740" y2="0">
+      <stop offset="0" stop-color="#EC407A">
+        <animate attributeName="stop-color" values="#EC407A;#009688;#7E57C2;#EC407A" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#7E57C2">
+        <animate attributeName="stop-color" values="#7E57C2;#EC407A;#009688;#7E57C2" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#009688">
+        <animate attributeName="stop-color" values="#009688;#7E57C2;#EC407A;#009688" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <clipPath id="clip-1">
+      <rect x="248" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;424;424;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-2">
+      <rect x="205" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;510;510;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-1.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-3">
+      <rect x="250" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;420;420;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-2.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-4">
+      <rect x="276" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;368;368;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-3.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-5">
+      <rect x="276" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;368;368;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-4.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-6">
+      <rect x="253" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;414;414;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-5.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-7">
+      <rect x="310" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;300;300;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-6.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="clip-8">
+      <rect x="276" y="0" width="0" height="64">
+        <animate attributeName="width" values="0;368;368;0;0" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-7.end" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .typing-text {
+      fill: url(#text-gradient);
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei", serif;
+      font-size: 23px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .cursor {
+      fill: #00a896;
+    }
+  </style>
+
+  <g opacity="0">
+    <animate id="line-1" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
+    <text class="typing-text" x="248" y="41" clip-path="url(#clip-1)">Building memory for LLM agents</text>
+    <rect class="cursor" x="248" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="248;672;672;248;248" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="0s;line-8.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0">
+    <animate id="line-2" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-1.end" fill="freeze"/>
+    <text class="typing-text" x="205" y="41" clip-path="url(#clip-2)">E.R.I.I / dual-track long-term memory</text>
+    <rect class="cursor" x="205" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="205;715;715;205;205" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-1.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0">
+    <animate id="line-3" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-2.end" fill="freeze"/>
+    <text class="typing-text" x="250" y="41" clip-path="url(#clip-3)">Windows tooling + AI experiments</text>
+    <rect class="cursor" x="250" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="250;670;670;250;250" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-2.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0">
+    <animate id="line-4" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-3.end" fill="freeze"/>
+    <text class="typing-text" x="276" y="41" clip-path="url(#clip-4)">既然选择了远方，便只顾风雨兼程。</text>
+    <rect class="cursor" x="276" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="276;644;644;276;276" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-3.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0">
+    <animate id="line-5" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-4.end" fill="freeze"/>
+    <text class="typing-text" x="276" y="41" clip-path="url(#clip-5)">路漫漫其修远兮，吾将上下而求索。</text>
+    <rect class="cursor" x="276" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="276;644;644;276;276" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-4.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0">
+    <animate id="line-6" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-5.end" fill="freeze"/>
+    <text class="typing-text" x="253" y="41" clip-path="url(#clip-6)">知我者谓我心忧，不知我者谓我何求。</text>
+    <rect class="cursor" x="253" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="253;667;667;253;253" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-5.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0">
+    <animate id="line-7" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-6.end" fill="freeze"/>
+    <text class="typing-text" x="310" y="41" clip-path="url(#clip-7)">天行健，君子以自强不息。</text>
+    <rect class="cursor" x="310" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="310;610;610;310;310" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-6.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g opacity="0">
+    <animate id="line-8" attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.01;0.78;0.95;1" dur="4.4s" begin="line-7.end" fill="freeze"/>
+    <text class="typing-text" x="276" y="41" clip-path="url(#clip-8)">长风破浪会有时，直挂云帆济沧海。</text>
+    <rect class="cursor" x="276" y="14" width="3" height="34" rx="1">
+      <animate attributeName="x" values="276;644;644;276;276" keyTimes="0;0.55;0.78;0.95;1" dur="4.4s" begin="line-7.end" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.72s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
