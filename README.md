@@ -63,7 +63,7 @@
     <td width="64%" valign="top">
       <h3>◈ Current Quest / 当前主线</h3>
       <p>正在开发 <a href="https://github.com/bailong-Hakuryu/E.R.I.I"><b>E.R.I.I</b></a>：面向 LLM Agent 的双轨长期记忆引擎。它不只保存对话，还让记忆能够形成、巩固、检索，并在后续任务中真正发挥作用。</p>
-      <blockquote><b>Memory Core:</b> 圣杯不是杯子，是会被记住的记忆。</blockquote>
+      <blockquote><b>Memory Core:</b> 圣杯不是杯子，是万能的许愿机 O(≧口≦)O。</blockquote>
       <p>
         <code>CLASS</code> Memory Engineer<br/>
         <code>FOCUS</code> Agent Memory · RAG · Evaluation<br/>
