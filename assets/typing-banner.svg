@@ -4,9 +4,9 @@
 
   <defs>
     <linearGradient id="text-gradient" gradientUnits="userSpaceOnUse" x1="180" y1="0" x2="740" y2="0">
-      <stop offset="0" stop-color="#EC407A"/>
-      <stop offset="0.5" stop-color="#7E57C2"/>
-      <stop offset="1" stop-color="#009688"/>
+      <stop offset="0" stop-color="#54B8C4"/>
+      <stop offset="0.5" stop-color="#7896D2"/>
+      <stop offset="1" stop-color="#D5A15C"/>
     </linearGradient>
     <clipPath id="clip-1"><rect id="clip-1-rect" x="250" y="0" width="425" height="64"/></clipPath>
     <clipPath id="clip-2"><rect id="clip-2-rect" x="217" y="0" width="0" height="64"/></clipPath>
@@ -36,7 +36,7 @@
     .line-8 { opacity: 0; animation: show-8 35.2s linear infinite; }
 
     .cursor {
-      fill: #00a896;
+      fill: #54B8C4;
       animation: blink 0.72s step-end infinite;
     }
     .cursor-1 { animation: move-1 35.2s steps(30, end) infinite, blink 0.72s step-end infinite; }

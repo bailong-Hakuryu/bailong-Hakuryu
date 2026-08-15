@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="48" viewBox="0 0 1200 48" role="img" aria-label="装饰分隔线">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#54B8C4" stop-opacity="0"/>
+      <stop offset="0.22" stop-color="#54B8C4" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#7896D2" stop-opacity="0.9"/>
+      <stop offset="0.78" stop-color="#D5A15C" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#D5A15C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gem" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#83E1E5"/>
+      <stop offset="0.52" stop-color="#91A9E8"/>
+      <stop offset="1" stop-color="#F0C27B"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <path d="M80 24H548M652 24H1120" stroke="url(#line)" stroke-width="1"/>
+  <path d="M600 14 610 24 600 34 590 24Z" fill="url(#gem)" filter="url(#glow)"/>
+  <circle cx="568" cy="24" r="2" fill="#54B8C4" opacity="0.75"/>
+  <circle cx="632" cy="24" r="2" fill="#D5A15C" opacity="0.75"/>
+  <path d="m580 20 1.2 2.8L584 24l-2.8 1.2L580 28l-1.2-2.8L576 24l2.8-1.2Z" fill="#7896D2" opacity="0.75"/>
+  <path d="m620 20 1.2 2.8L624 24l-2.8 1.2L620 28l-1.2-2.8L616 24l2.8-1.2Z" fill="#7896D2" opacity="0.75"/>
+</svg>
