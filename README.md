@@ -35,17 +35,17 @@
 
 <a id="about"></a>
 
-## 01 // Character File · 角色档案
+## EP.01 // Character File · 角色档案
 
 <table width="100%">
   <tr>
     <td width="65%" valign="top">
-      <sub>CLASS // MEMORY ENGINEER</sub>
+      <sub>ROUTE 2622 // MEMORY ARCHIVIST</sub>
       <h3>把“记住”变成 Agent 可以依赖的能力。</h3>
       <p>我关注 LLM Agent 的长期记忆、RAG 与评估，也喜欢制作克制、可靠的 Windows 工具。比起堆叠功能，我更在意系统能否在下一次任务里真正复用过去的经验。</p>
       <blockquote>
-        <b>Memory Core</b><br/>
-        对话只是输入；能被验证、维护并继续生长的经验，才是记忆。
+        <b>LOGIN VOICE // 登录语音</b><br/>
+        “欢迎回来。上一次留下的记忆，已经同步完成了。”
       </blockquote>
       <p>
         <code>FOCUS</code>&nbsp; Agent Memory · RAG · Evaluation<br/>
@@ -56,30 +56,15 @@
     <td width="35%" align="center" valign="middle">
       <img src="./assets/portrait.png" width="220" alt="白龙的角色立绘"/>
       <br/>
-      <sub><code>AVATAR 2622</code><br/>感谢 <b>Nachoneko</b> 的陪伴与启发 ♡</sub>
+      <sub><code>MEMORY ANALYST</code><br/>感谢 <b>Nachoneko</b> 的陪伴与启发 ♡</sub>
     </td>
   </tr>
 </table>
 
-<table width="100%">
-  <tr>
-    <td width="25%" align="center">
-      <sub>NOW BUILDING</sub><br/>
-      <a href="https://github.com/bailong-Hakuryu/E.R.I.I"><b>E.R.I.I</b></a>
-    </td>
-    <td width="50%" align="center">
-      <sub>CURRENT SIGNAL</sub><br/>
-      <b>Formation → Consolidation → Recall</b>
-    </td>
-    <td width="25%" align="center">
-      <sub>CORE STATUS</sub><br/>
-      <img src="https://img.shields.io/badge/MEMORY-SYNCED-54B8C4?style=flat-square&labelColor=111827" alt="Memory core synced"/>
-    </td>
-  </tr>
-</table>
+> **CURRENT ROUTE //** [E.R.I.I](https://github.com/bailong-Hakuryu/E.R.I.I)　·　`FORMATION → CONSOLIDATION → RECALL`　·　`MEMORY SYNCED`
 
 <details>
-  <summary><b>✦ Memory Doctrine / 记忆准则</b></summary>
+  <summary><b>✦ Archive Note / 记忆准则</b></summary>
   <br/>
   <code>RECALL</code> 让经验可被找到　·　<code>CONSOLIDATE</code> 让经验保持清晰　·　<code>GROW</code> 让经验参与下一次行动
 </details>
@@ -88,11 +73,11 @@
 
 <a id="projects"></a>
 
-## 02 // Selected Quests · 精选项目
+## EP.02 // Selected Quests · 精选项目
 
 <table width="100%">
   <tr>
-    <td width="12%" align="center"><h2>01</h2><sub>MAIN</sub></td>
+    <td width="12%" align="center"><h2>01</h2><sub>MAIN QUEST</sub></td>
     <td width="88%">
       <h3><a href="https://github.com/bailong-Hakuryu/E.R.I.I">E.R.I.I · 双轨长期记忆引擎</a></h3>
       <p>为 LLM Agent 构建可形成、巩固与检索的长期记忆，让每一次任务都能站在过去经验之上。</p>
@@ -104,7 +89,7 @@
 
 <table width="100%">
   <tr>
-    <td width="12%" align="center"><h2>02</h2><sub>GUARD</sub></td>
+    <td width="12%" align="center"><h2>02</h2><sub>GUARD QUEST</sub></td>
     <td width="88%">
       <h3><a href="https://github.com/bailong-Hakuryu/UpdateLock">UpdateLock · Windows 更新守卫</a></h3>
       <p>控制软件的非预期自动更新，把选择权交还给用户；专注原生能力、清晰状态与可逆操作。</p>
@@ -116,7 +101,7 @@
 
 <table width="100%">
   <tr>
-    <td width="12%" align="center"><h2>03</h2><sub>STORY</sub></td>
+    <td width="12%" align="center"><h2>03</h2><sub>STORY QUEST</sub></td>
     <td width="88%">
       <h3><a href="https://github.com/bailong-Hakuryu/KouriChat">KouriChat · 角色交互与长期陪伴</a></h3>
       <p>探索基于 LLM 的连续角色关系与长期上下文，让角色不只回应当下，也能记得共同经历。</p>
@@ -134,7 +119,7 @@
 
 <a id="stack"></a>
 
-## 03 // Core Stack · 核心装备
+## EP.03 // Core Loadout · 核心装备
 
 <div align="center">
 
@@ -171,7 +156,7 @@
 
 <a id="activity"></a>
 
-## 04 // Adventure Record · 冒险记录
+## EP.04 // Adventure Log · 冒险记录
 
 <div align="center">
 
@@ -194,7 +179,7 @@
 <br/>
 
 <div align="center">
-  <sub>✦ END OF FILE // THE MEMORY CONTINUES ✦</sub>
+  <sub>✦ END OF FILE // また、次の記憶で。✦</sub>
   <h3>愿每一次远行，都为下一次出发留下坐标。</h3>
   <p>
     <a href="https://xn--9wyy09f.cn">BLOG</a>&nbsp; · &nbsp;
