@@ -1,66 +1,194 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="56" viewBox="0 0 760 56" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="64" viewBox="0 0 760 64" role="img" aria-labelledby="title desc">
   <title id="title">白龙的动态打字介绍</title>
-  <desc id="desc">三句关于 Agent 记忆、Windows 工具和猫的介绍依次打字显示。</desc>
+  <desc id="desc">十六句关于开发、好奇心、Nachoneko 与猫的短句交错显示。</desc>
 
   <defs>
-    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="560" y2="0">
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="120" y1="0" x2="640" y2="0">
       <stop offset="0" stop-color="#2F7F90"/>
-      <stop offset="1" stop-color="#536F9D"/>
+      <stop offset=".54" stop-color="#536F9D"/>
+      <stop offset="1" stop-color="#72B8C4"/>
     </linearGradient>
-    <clipPath id="clip1"><rect class="reveal reveal1" x="194" y="0" width="372" height="56"/></clipPath>
-    <clipPath id="clip2"><rect class="reveal reveal2" x="214" y="0" width="332" height="56"/></clipPath>
-    <clipPath id="clip3"><rect class="reveal reveal3" x="236" y="0" width="288" height="56"/></clipPath>
+    <clipPath id="clip1"><rect class="reveal reveal1" x="216" y="0" width="328" height="64"/></clipPath>
+    <clipPath id="clip2"><rect class="reveal reveal2" x="186" y="0" width="389" height="64"/></clipPath>
+    <clipPath id="clip3"><rect class="reveal reveal3" x="113" y="0" width="535" height="64"/></clipPath>
+    <clipPath id="clip4"><rect class="reveal reveal4" x="216" y="0" width="328" height="64"/></clipPath>
+    <clipPath id="clip5"><rect class="reveal reveal5" x="113" y="0" width="535" height="64"/></clipPath>
+    <clipPath id="clip6"><rect class="reveal reveal6" x="168" y="0" width="425" height="64"/></clipPath>
+    <clipPath id="clip7"><rect class="reveal reveal7" x="235" y="0" width="291" height="64"/></clipPath>
+    <clipPath id="clip8"><rect class="reveal reveal8" x="204" y="0" width="352" height="64"/></clipPath>
+    <clipPath id="clip9"><rect class="reveal reveal9" x="88" y="0" width="584" height="64"/></clipPath>
+    <clipPath id="clip10"><rect class="reveal reveal10" x="46" y="0" width="669" height="64"/></clipPath>
+    <clipPath id="clip11"><rect class="reveal reveal11" x="62" y="0" width="636" height="64"/></clipPath>
+    <clipPath id="clip12"><rect class="reveal reveal12" x="168" y="0" width="425" height="64"/></clipPath>
+    <clipPath id="clip13"><rect class="reveal reveal13" x="265" y="0" width="230" height="64"/></clipPath>
+    <clipPath id="clip14"><rect class="reveal reveal14" x="174" y="0" width="413" height="64"/></clipPath>
+    <clipPath id="clip15"><rect class="reveal reveal15" x="101" y="0" width="559" height="64"/></clipPath>
+    <clipPath id="clip16"><rect class="reveal reveal16" x="210" y="0" width="340" height="64"/></clipPath>
   </defs>
 
   <style>
     .copy {
       fill: url(#ink);
       font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
-      font-size: 22px;
       font-weight: 600;
-      letter-spacing: .2px;
+      letter-spacing: .1px;
       text-anchor: middle;
     }
-    .line1 { opacity: 1; animation: show1 18s linear infinite; }
-    .line2 { opacity: 0; animation: show2 18s linear infinite; }
-    .line3 { opacity: 0; animation: show3 18s linear infinite; }
-    .reveal1 { animation: reveal1 18s steps(26, end) infinite; }
-    .reveal2 { animation: reveal2 18s steps(23, end) infinite; }
-    .reveal3 { animation: reveal3 18s steps(12, end) infinite; }
-    .cursor { fill: #2F7F90; animation-timing-function: steps(1, end); }
-    .cursor1 { animation: move1 18s steps(26, end) infinite, blink .8s step-end infinite; }
-    .cursor2 { animation: move2 18s steps(23, end) infinite, blink .8s step-end infinite; }
-    .cursor3 { animation: move3 18s steps(12, end) infinite, blink .8s step-end infinite; }
-
+    .item { opacity: 0; animation: show 64s linear var(--delay) infinite; }
+    .cursor { fill: #2F7F90; }
+    .item1 { --delay: -2.8s; opacity: 1; }
+    .reveal1 { --delay: -2.8s; animation: reveal1 64s steps(26, end) var(--delay) infinite; }
+    .cursor1 { animation: move1 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal1 { 0% { width: 0; } 4.14063% , 5.96875% { width: 328px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move1 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(328px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item2 { --delay: 1.2000000000000002s;  }
+    .reveal2 { --delay: 1.2000000000000002s; animation: reveal2 64s steps(31, end) var(--delay) infinite; }
+    .cursor2 { animation: move2 64s steps(31, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal2 { 0% { width: 0; } 4.14063% , 5.96875% { width: 389px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move2 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(389px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item3 { --delay: 5.2s;  }
+    .reveal3 { --delay: 5.2s; animation: reveal3 64s steps(43, end) var(--delay) infinite; }
+    .cursor3 { animation: move3 64s steps(43, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal3 { 0% { width: 0; } 4.14063% , 5.96875% { width: 535px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move3 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(535px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item4 { --delay: 9.2s;  }
+    .reveal4 { --delay: 9.2s; animation: reveal4 64s steps(26, end) var(--delay) infinite; }
+    .cursor4 { animation: move4 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal4 { 0% { width: 0; } 4.14063% , 5.96875% { width: 328px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move4 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(328px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item5 { --delay: 13.2s;  }
+    .reveal5 { --delay: 13.2s; animation: reveal5 64s steps(43, end) var(--delay) infinite; }
+    .cursor5 { animation: move5 64s steps(43, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal5 { 0% { width: 0; } 4.14063% , 5.96875% { width: 535px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move5 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(535px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item6 { --delay: 17.2s;  }
+    .reveal6 { --delay: 17.2s; animation: reveal6 64s steps(34, end) var(--delay) infinite; }
+    .cursor6 { animation: move6 64s steps(34, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal6 { 0% { width: 0; } 4.14063% , 5.96875% { width: 425px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move6 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(425px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item7 { --delay: 21.2s;  }
+    .reveal7 { --delay: 21.2s; animation: reveal7 64s steps(23, end) var(--delay) infinite; }
+    .cursor7 { animation: move7 64s steps(23, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal7 { 0% { width: 0; } 4.14063% , 5.96875% { width: 291px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move7 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(291px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item8 { --delay: 25.2s;  }
+    .reveal8 { --delay: 25.2s; animation: reveal8 64s steps(28, end) var(--delay) infinite; }
+    .cursor8 { animation: move8 64s steps(28, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal8 { 0% { width: 0; } 4.14063% , 5.96875% { width: 352px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move8 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(352px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item9 { --delay: 29.2s;  }
+    .reveal9 { --delay: 29.2s; animation: reveal9 64s steps(47, end) var(--delay) infinite; }
+    .cursor9 { animation: move9 64s steps(47, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal9 { 0% { width: 0; } 4.14063% , 5.96875% { width: 584px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move9 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(584px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item10 { --delay: 33.2s;  }
+    .reveal10 { --delay: 33.2s; animation: reveal10 64s steps(60, end) var(--delay) infinite; }
+    .cursor10 { animation: move10 64s steps(60, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal10 { 0% { width: 0; } 4.14063% , 5.96875% { width: 669px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move10 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(669px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item11 { --delay: 37.2s;  }
+    .reveal11 { --delay: 37.2s; animation: reveal11 64s steps(54, end) var(--delay) infinite; }
+    .cursor11 { animation: move11 64s steps(54, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal11 { 0% { width: 0; } 4.14063% , 5.96875% { width: 636px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move11 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(636px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item12 { --delay: 41.2s;  }
+    .reveal12 { --delay: 41.2s; animation: reveal12 64s steps(34, end) var(--delay) infinite; }
+    .cursor12 { animation: move12 64s steps(34, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal12 { 0% { width: 0; } 4.14063% , 5.96875% { width: 425px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move12 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(425px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item13 { --delay: 45.2s;  }
+    .reveal13 { --delay: 45.2s; animation: reveal13 64s steps(12, end) var(--delay) infinite; }
+    .cursor13 { animation: move13 64s steps(12, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal13 { 0% { width: 0; } 4.14063% , 5.96875% { width: 230px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move13 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(230px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item14 { --delay: 49.2s;  }
+    .reveal14 { --delay: 49.2s; animation: reveal14 64s steps(33, end) var(--delay) infinite; }
+    .cursor14 { animation: move14 64s steps(33, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal14 { 0% { width: 0; } 4.14063% , 5.96875% { width: 413px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move14 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(413px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item15 { --delay: 53.2s;  }
+    .reveal15 { --delay: 53.2s; animation: reveal15 64s steps(45, end) var(--delay) infinite; }
+    .cursor15 { animation: move15 64s steps(45, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal15 { 0% { width: 0; } 4.14063% , 5.96875% { width: 559px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move15 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(559px); } 6.23438%, 100% { transform: translateX(0); } }
+    .item16 { --delay: 57.2s;  }
+    .reveal16 { --delay: 57.2s; animation: reveal16 64s steps(27, end) var(--delay) infinite; }
+    .cursor16 { animation: move16 64s steps(27, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal16 { 0% { width: 0; } 4.14063% , 5.96875% { width: 340px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move16 { 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(340px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes show { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
-    @keyframes show1 { 0%, 24% { opacity: 1; } 25%, 92% { opacity: 0; } 93%, 100% { opacity: 1; } }
-    @keyframes show2 { 0%, 28% { opacity: 0; } 29%, 57% { opacity: 1; } 58%, 100% { opacity: 0; } }
-    @keyframes show3 { 0%, 60% { opacity: 0; } 61%, 89% { opacity: 1; } 90%, 100% { opacity: 0; } }
-
-    @keyframes reveal1 { 0%, 24% { width: 372px; } 25%, 93% { width: 0; } 100% { width: 372px; } }
-    @keyframes reveal2 { 0%, 29% { width: 0; } 38%, 57% { width: 332px; } 58%, 100% { width: 0; } }
-    @keyframes reveal3 { 0%, 61% { width: 0; } 70%, 89% { width: 288px; } 90%, 100% { width: 0; } }
-
-    @keyframes move1 { 0%, 24% { transform: translateX(0); } 25%, 93% { transform: translateX(-348px); } 100% { transform: translateX(0); } }
-    @keyframes move2 { 0%, 29% { transform: translateX(-308px); } 38%, 57% { transform: translateX(0); } 58%, 100% { transform: translateX(-308px); } }
-    @keyframes move3 { 0%, 61% { transform: translateX(-264px); } 70%, 89% { transform: translateX(0); } 90%, 100% { transform: translateX(-264px); } }
 
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
-      .line2, .line3, .cursor { display: none; }
+      .item { display: none; }
+      .item1 { display: inline; opacity: 1; }
+      .cursor { display: none; }
     }
   </style>
 
-  <g class="line1">
-    <text class="copy" x="380" y="37" clip-path="url(#clip1)">Building memory for agents</text>
-    <rect class="cursor cursor1" x="554" y="13" width="3" height="30" rx="1"/>
+  <g class="item item1">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip1)">Building memory for agents</text>
+    <rect class="cursor cursor1" x="214" y="15" width="3" height="30" rx="1"/>
   </g>
-  <g class="line2">
-    <text class="copy" x="380" y="37" clip-path="url(#clip2)">Quiet tools for Windows</text>
-    <rect class="cursor cursor2" x="534" y="13" width="3" height="30" rx="1"/>
+  <g class="item item2">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip2)">sudo make me a better developer</text>
+    <rect class="cursor cursor2" x="184" y="15" width="3" height="30" rx="1"/>
   </g>
-  <g class="line3">
-    <text class="copy" x="380" y="37" clip-path="url(#clip3)">代码、记忆，还有一点猫</text>
-    <rect class="cursor cursor3" x="512" y="13" width="3" height="30" rx="1"/>
+  <g class="item item3">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip3)">Coding until Nachoneko says I'm doing well.</text>
+    <rect class="cursor cursor3" x="111" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item4">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip4)">404: Motivation not found.</text>
+    <rect class="cursor cursor4" x="214" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item5">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip5)">Powered by code, curiosity, and cat energy.</text>
+    <rect class="cursor cursor5" x="111" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item6">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip6)">Compiling thoughts into reality...</text>
+    <rect class="cursor cursor6" x="166" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item7">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip7)">Quiet tools for Windows</text>
+    <rect class="cursor cursor7" x="233" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item8">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip8)">Currently debugging my life.</text>
+    <rect class="cursor cursor8" x="202" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item9">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip9)">Professional developer. Amateur cat enthusiast.</text>
+    <rect class="cursor cursor9" x="86" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item10">
+    <text class="copy" x="380" y="42" font-size="18" clip-path="url(#clip10)">Powered by curiosity, Nachoneko, and questionable decisions.</text>
+    <rect class="cursor cursor10" x="44" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item11">
+    <text class="copy" x="380" y="42" font-size="19" clip-path="url(#clip11)">Writing code while waiting for someone to pat my head.</text>
+    <rect class="cursor cursor11" x="60" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item12">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip12)">Probably fixing something at 3 AM.</text>
+    <rect class="cursor cursor12" x="166" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item13">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip13)">代码、记忆，还有一点猫</text>
+    <rect class="cursor cursor13" x="263" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item14">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip14)">It works on my machine. Probably.</text>
+    <rect class="cursor cursor14" x="172" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item15">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip15)">Open source developer, full-time cat enjoyer.</text>
+    <rect class="cursor cursor15" x="99" y="15" width="3" height="30" rx="1"/>
+  </g>
+  <g class="item item16">
+    <text class="copy" x="380" y="42" font-size="20" clip-path="url(#clip16)">One more commit won't hurt.</text>
+    <rect class="cursor cursor16" x="208" y="15" width="3" height="30" rx="1"/>
   </g>
 </svg>

@@ -24,7 +24,11 @@
   <a href="https://x.com/Hakuryubailong"><img alt="X" src="https://img.shields.io/badge/X-FOLLOW-819CBF?style=flat&logo=x&logoColor=white"/></a>
   <a href="mailto:bailong996633@gmail.com"><img alt="Email" src="https://img.shields.io/badge/MAIL-HELLO-526A82?style=flat&logo=gmail&logoColor=white"/></a>
 
+  <p><sub><a href="#profile-about">ABOUT</a> · <a href="#profile-projects">PROJECTS</a> · <a href="#profile-toolbox">TOOLBOX</a> · <a href="#profile-github">GITHUB</a></sub></p>
+
 </div>
+
+<a name="profile-about"></a>
 
 ## About me · 关于我
 
@@ -44,6 +48,8 @@
 <sub>Visual inspiration: <a href="https://amashiro.com/profile/">Nachoneko / 甘城なつき</a> ♡</sub>
 
 ---
+
+<a name="profile-projects"></a>
 
 ## Things I build · 正在做的事
 
@@ -71,6 +77,8 @@
 
 ---
 
+<a name="profile-toolbox"></a>
+
 ## Toolbox · 工具箱
 
 <div align="center">
@@ -95,6 +103,8 @@
 </div>
 
 ---
+
+<a name="profile-github"></a>
 
 ## GitHub notes · 足迹
 

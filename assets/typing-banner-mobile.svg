@@ -1,63 +1,280 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="72" viewBox="0 0 420 72" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="88" viewBox="0 0 420 88" role="img" aria-labelledby="title desc">
   <title id="title">白龙的移动端动态打字介绍</title>
-  <desc id="desc">三句简短介绍依次打字显示。</desc>
+  <desc id="desc">十六句开发与猫系短句交错显示，较长文案分两行依次打出。</desc>
 
   <defs>
-    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="370" y2="0">
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="36" y1="0" x2="384" y2="0">
       <stop offset="0" stop-color="#2F7F90"/>
-      <stop offset="1" stop-color="#536F9D"/>
+      <stop offset=".54" stop-color="#536F9D"/>
+      <stop offset="1" stop-color="#72B8C4"/>
     </linearGradient>
-    <clipPath id="clip1"><rect class="reveal reveal1" x="42" y="0" width="336" height="72"/></clipPath>
-    <clipPath id="clip2"><rect class="reveal reveal2" x="60" y="0" width="300" height="72"/></clipPath>
-    <clipPath id="clip3"><rect class="reveal reveal3" x="70" y="0" width="280" height="72"/></clipPath>
+    <clipPath id="clip1a"><rect class="reveal reveal1a" x="79" y="30" width="262" height="29"/></clipPath>
+    <clipPath id="clip2a"><rect class="reveal reveal2a" x="55" y="30" width="311" height="29"/></clipPath>
+    <clipPath id="clip3a"><rect class="reveal reveal3a" x="99" y="11" width="223" height="29"/></clipPath>
+    <clipPath id="clip3b"><rect class="reveal reveal3b" x="108" y="40" width="204" height="29"/></clipPath>
+    <clipPath id="clip4a"><rect class="reveal reveal4a" x="79" y="30" width="262" height="29"/></clipPath>
+    <clipPath id="clip5a"><rect class="reveal reveal5a" x="128" y="11" width="165" height="29"/></clipPath>
+    <clipPath id="clip5b"><rect class="reveal reveal5b" x="79" y="40" width="262" height="29"/></clipPath>
+    <clipPath id="clip6a"><rect class="reveal reveal6a" x="40" y="30" width="340" height="29"/></clipPath>
+    <clipPath id="clip7a"><rect class="reveal reveal7a" x="94" y="30" width="233" height="29"/></clipPath>
+    <clipPath id="clip8a"><rect class="reveal reveal8a" x="69" y="30" width="282" height="29"/></clipPath>
+    <clipPath id="clip9a"><rect class="reveal reveal9a" x="94" y="11" width="233" height="29"/></clipPath>
+    <clipPath id="clip9b"><rect class="reveal reveal9b" x="94" y="40" width="233" height="29"/></clipPath>
+    <clipPath id="clip10a"><rect class="reveal reveal10a" x="50" y="11" width="321" height="29"/></clipPath>
+    <clipPath id="clip10b"><rect class="reveal reveal10b" x="74" y="40" width="272" height="29"/></clipPath>
+    <clipPath id="clip11a"><rect class="reveal reveal11a" x="79" y="11" width="262" height="29"/></clipPath>
+    <clipPath id="clip11b"><rect class="reveal reveal11b" x="74" y="40" width="272" height="29"/></clipPath>
+    <clipPath id="clip12a"><rect class="reveal reveal12a" x="40" y="30" width="340" height="29"/></clipPath>
+    <clipPath id="clip13a"><rect class="reveal reveal13a" x="118" y="30" width="184" height="29"/></clipPath>
+    <clipPath id="clip14a"><rect class="reveal reveal14a" x="45" y="30" width="331" height="29"/></clipPath>
+    <clipPath id="clip15a"><rect class="reveal reveal15a" x="99" y="11" width="223" height="29"/></clipPath>
+    <clipPath id="clip15b"><rect class="reveal reveal15b" x="99" y="40" width="223" height="29"/></clipPath>
+    <clipPath id="clip16a"><rect class="reveal reveal16a" x="74" y="30" width="272" height="29"/></clipPath>
   </defs>
 
   <style>
     .copy {
       fill: url(#ink);
       font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 600;
       text-anchor: middle;
     }
-    .line1 { opacity: 1; animation: show1 18s linear infinite; }
-    .line2 { opacity: 0; animation: show2 18s linear infinite; }
-    .line3 { opacity: 0; animation: show3 18s linear infinite; }
-    .reveal1 { animation: reveal1 18s steps(26, end) infinite; }
-    .reveal2 { animation: reveal2 18s steps(23, end) infinite; }
-    .reveal3 { animation: reveal3 18s steps(12, end) infinite; }
-    .cursor1 { animation: move1 18s steps(26, end) infinite, blink .8s step-end infinite; }
-    .cursor2 { animation: move2 18s steps(23, end) infinite, blink .8s step-end infinite; }
-    .cursor3 { animation: move3 18s steps(12, end) infinite, blink .8s step-end infinite; }
+    .item { opacity: 0; animation: show 64s linear var(--delay) infinite; }
     .cursor { fill: #2F7F90; }
-
+    .item1 { --delay: -2.8s; opacity: 1; }
+    .reveal1a { --delay: -2.8s; animation: reveal1a 64s steps(26, end) var(--delay) infinite; }
+    .cursor-stage1a { animation: cursorStage1a 64s linear var(--delay) infinite; }
+    .cursor1a { animation: move1a 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal1a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move1a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage1a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item2 { --delay: 1.2000000000000002s;  }
+    .reveal2a { --delay: 1.2000000000000002s; animation: reveal2a 64s steps(31, end) var(--delay) infinite; }
+    .cursor-stage2a { animation: cursorStage2a 64s linear var(--delay) infinite; }
+    .cursor2a { animation: move2a 64s steps(31, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal2a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 311px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move2a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(311px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage2a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item3 { --delay: 5.2s;  }
+    .reveal3a { --delay: 5.2s; animation: reveal3a 64s steps(22, end) var(--delay) infinite; }
+    .cursor-stage3a { animation: cursorStage3a 64s linear var(--delay) infinite; }
+    .cursor3a { animation: move3a 64s steps(22, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal3a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 223px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move3a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(223px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage3a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
+    .reveal3b { --delay: 5.2s; animation: reveal3b 64s steps(20, end) var(--delay) infinite; }
+    .cursor-stage3b { animation: cursorStage3b 64s linear var(--delay) infinite; }
+    .cursor3b { animation: move3b 64s steps(20, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal3b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 204px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move3b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(204px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage3b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item4 { --delay: 9.2s;  }
+    .reveal4a { --delay: 9.2s; animation: reveal4a 64s steps(26, end) var(--delay) infinite; }
+    .cursor-stage4a { animation: cursorStage4a 64s linear var(--delay) infinite; }
+    .cursor4a { animation: move4a 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal4a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move4a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage4a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item5 { --delay: 13.2s;  }
+    .reveal5a { --delay: 13.2s; animation: reveal5a 64s steps(16, end) var(--delay) infinite; }
+    .cursor-stage5a { animation: cursorStage5a 64s linear var(--delay) infinite; }
+    .cursor5a { animation: move5a 64s steps(16, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal5a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 165px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move5a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(165px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage5a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
+    .reveal5b { --delay: 13.2s; animation: reveal5b 64s steps(26, end) var(--delay) infinite; }
+    .cursor-stage5b { animation: cursorStage5b 64s linear var(--delay) infinite; }
+    .cursor5b { animation: move5b 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal5b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move5b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage5b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item6 { --delay: 17.2s;  }
+    .reveal6a { --delay: 17.2s; animation: reveal6a 64s steps(34, end) var(--delay) infinite; }
+    .cursor-stage6a { animation: cursorStage6a 64s linear var(--delay) infinite; }
+    .cursor6a { animation: move6a 64s steps(34, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal6a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 340px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move6a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(340px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage6a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item7 { --delay: 21.2s;  }
+    .reveal7a { --delay: 21.2s; animation: reveal7a 64s steps(23, end) var(--delay) infinite; }
+    .cursor-stage7a { animation: cursorStage7a 64s linear var(--delay) infinite; }
+    .cursor7a { animation: move7a 64s steps(23, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal7a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 233px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move7a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(233px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage7a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item8 { --delay: 25.2s;  }
+    .reveal8a { --delay: 25.2s; animation: reveal8a 64s steps(28, end) var(--delay) infinite; }
+    .cursor-stage8a { animation: cursorStage8a 64s linear var(--delay) infinite; }
+    .cursor8a { animation: move8a 64s steps(28, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal8a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 282px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move8a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(282px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage8a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item9 { --delay: 29.2s;  }
+    .reveal9a { --delay: 29.2s; animation: reveal9a 64s steps(23, end) var(--delay) infinite; }
+    .cursor-stage9a { animation: cursorStage9a 64s linear var(--delay) infinite; }
+    .cursor9a { animation: move9a 64s steps(23, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal9a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 233px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move9a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(233px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage9a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
+    .reveal9b { --delay: 29.2s; animation: reveal9b 64s steps(23, end) var(--delay) infinite; }
+    .cursor-stage9b { animation: cursorStage9b 64s linear var(--delay) infinite; }
+    .cursor9b { animation: move9b 64s steps(23, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal9b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 233px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move9b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(233px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage9b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item10 { --delay: 33.2s;  }
+    .reveal10a { --delay: 33.2s; animation: reveal10a 64s steps(32, end) var(--delay) infinite; }
+    .cursor-stage10a { animation: cursorStage10a 64s linear var(--delay) infinite; }
+    .cursor10a { animation: move10a 64s steps(32, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal10a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 321px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move10a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(321px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage10a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
+    .reveal10b { --delay: 33.2s; animation: reveal10b 64s steps(27, end) var(--delay) infinite; }
+    .cursor-stage10b { animation: cursorStage10b 64s linear var(--delay) infinite; }
+    .cursor10b { animation: move10b 64s steps(27, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal10b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 272px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move10b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(272px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage10b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item11 { --delay: 37.2s;  }
+    .reveal11a { --delay: 37.2s; animation: reveal11a 64s steps(26, end) var(--delay) infinite; }
+    .cursor-stage11a { animation: cursorStage11a 64s linear var(--delay) infinite; }
+    .cursor11a { animation: move11a 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal11a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move11a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage11a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
+    .reveal11b { --delay: 37.2s; animation: reveal11b 64s steps(27, end) var(--delay) infinite; }
+    .cursor-stage11b { animation: cursorStage11b 64s linear var(--delay) infinite; }
+    .cursor11b { animation: move11b 64s steps(27, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal11b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 272px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move11b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(272px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage11b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item12 { --delay: 41.2s;  }
+    .reveal12a { --delay: 41.2s; animation: reveal12a 64s steps(34, end) var(--delay) infinite; }
+    .cursor-stage12a { animation: cursorStage12a 64s linear var(--delay) infinite; }
+    .cursor12a { animation: move12a 64s steps(34, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal12a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 340px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move12a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(340px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage12a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item13 { --delay: 45.2s;  }
+    .reveal13a { --delay: 45.2s; animation: reveal13a 64s steps(11, end) var(--delay) infinite; }
+    .cursor-stage13a { animation: cursorStage13a 64s linear var(--delay) infinite; }
+    .cursor13a { animation: move13a 64s steps(11, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal13a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 184px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move13a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(184px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage13a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item14 { --delay: 49.2s;  }
+    .reveal14a { --delay: 49.2s; animation: reveal14a 64s steps(33, end) var(--delay) infinite; }
+    .cursor-stage14a { animation: cursorStage14a 64s linear var(--delay) infinite; }
+    .cursor14a { animation: move14a 64s steps(33, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal14a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 331px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move14a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(331px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage14a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item15 { --delay: 53.2s;  }
+    .reveal15a { --delay: 53.2s; animation: reveal15a 64s steps(22, end) var(--delay) infinite; }
+    .cursor-stage15a { animation: cursorStage15a 64s linear var(--delay) infinite; }
+    .cursor15a { animation: move15a 64s steps(22, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal15a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 223px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move15a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(223px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage15a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
+    .reveal15b { --delay: 53.2s; animation: reveal15b 64s steps(22, end) var(--delay) infinite; }
+    .cursor-stage15b { animation: cursorStage15b 64s linear var(--delay) infinite; }
+    .cursor15b { animation: move15b 64s steps(22, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal15b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 223px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move15b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(223px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage15b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    .item16 { --delay: 57.2s;  }
+    .reveal16a { --delay: 57.2s; animation: reveal16a 64s steps(27, end) var(--delay) infinite; }
+    .cursor-stage16a { animation: cursorStage16a 64s linear var(--delay) infinite; }
+    .cursor16a { animation: move16a 64s steps(27, end) var(--delay) infinite, blink .8s step-end infinite; }
+    @keyframes reveal16a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 272px; } 6.23438%, 100% { width: 0; } }
+    @keyframes move16a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(272px); } 6.23438%, 100% { transform: translateX(0); } }
+    @keyframes cursorStage16a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    @keyframes show { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
-    @keyframes show1 { 0%, 24% { opacity: 1; } 25%, 92% { opacity: 0; } 93%, 100% { opacity: 1; } }
-    @keyframes show2 { 0%, 28% { opacity: 0; } 29%, 57% { opacity: 1; } 58%, 100% { opacity: 0; } }
-    @keyframes show3 { 0%, 60% { opacity: 0; } 61%, 89% { opacity: 1; } 90%, 100% { opacity: 0; } }
-    @keyframes reveal1 { 0%, 24% { width: 336px; } 25%, 93% { width: 0; } 100% { width: 336px; } }
-    @keyframes reveal2 { 0%, 29% { width: 0; } 38%, 57% { width: 300px; } 58%, 100% { width: 0; } }
-    @keyframes reveal3 { 0%, 61% { width: 0; } 70%, 89% { width: 280px; } 90%, 100% { width: 0; } }
-    @keyframes move1 { 0%, 24% { transform: translateX(0); } 25%, 93% { transform: translateX(-312px); } 100% { transform: translateX(0); } }
-    @keyframes move2 { 0%, 29% { transform: translateX(-276px); } 38%, 57% { transform: translateX(0); } 58%, 100% { transform: translateX(-276px); } }
-    @keyframes move3 { 0%, 61% { transform: translateX(-256px); } 70%, 89% { transform: translateX(0); } 90%, 100% { transform: translateX(-256px); } }
 
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
-      .line2, .line3, .cursor { display: none; }
+      .item { display: none; }
+      .item1 { display: inline; opacity: 1; }
+      .cursor-stage { display: none; }
     }
   </style>
 
-  <g class="line1">
-    <text class="copy" x="210" y="45" clip-path="url(#clip1)">Building memory for agents</text>
-    <rect class="cursor cursor1" x="366" y="17" width="3" height="30" rx="1"/>
+  <g class="item item1">
+    <text class="copy" x="210" y="54" clip-path="url(#clip1a)">Building memory for agents</text>
+    <g class="cursor-stage cursor-stage1a"><rect class="cursor cursor1a" x="77" y="31" width="3" height="24" rx="1"/></g>
   </g>
-  <g class="line2">
-    <text class="copy" x="210" y="45" clip-path="url(#clip2)">Quiet tools for Windows</text>
-    <rect class="cursor cursor2" x="348" y="17" width="3" height="30" rx="1"/>
+  <g class="item item2">
+    <text class="copy" x="210" y="54" clip-path="url(#clip2a)">sudo make me a better developer</text>
+    <g class="cursor-stage cursor-stage2a"><rect class="cursor cursor2a" x="53" y="31" width="3" height="24" rx="1"/></g>
   </g>
-  <g class="line3">
-    <text class="copy" x="210" y="45" clip-path="url(#clip3)">代码、记忆，还有一点猫</text>
-    <rect class="cursor cursor3" x="338" y="17" width="3" height="30" rx="1"/>
+  <g class="item item3">
+    <text class="copy" x="210" y="35" clip-path="url(#clip3a)">Coding until Nachoneko</text>
+    <text class="copy" x="210" y="64" clip-path="url(#clip3b)">says I'm doing well.</text>
+    <g class="cursor-stage cursor-stage3a"><rect class="cursor cursor3a" x="97" y="12" width="3" height="24" rx="1"/></g>
+    <g class="cursor-stage cursor-stage3b"><rect class="cursor cursor3b" x="106" y="41" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item4">
+    <text class="copy" x="210" y="54" clip-path="url(#clip4a)">404: Motivation not found.</text>
+    <g class="cursor-stage cursor-stage4a"><rect class="cursor cursor4a" x="77" y="31" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item5">
+    <text class="copy" x="210" y="35" clip-path="url(#clip5a)">Powered by code,</text>
+    <text class="copy" x="210" y="64" clip-path="url(#clip5b)">curiosity, and cat energy.</text>
+    <g class="cursor-stage cursor-stage5a"><rect class="cursor cursor5a" x="126" y="12" width="3" height="24" rx="1"/></g>
+    <g class="cursor-stage cursor-stage5b"><rect class="cursor cursor5b" x="77" y="41" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item6">
+    <text class="copy" x="210" y="54" clip-path="url(#clip6a)">Compiling thoughts into reality...</text>
+    <g class="cursor-stage cursor-stage6a"><rect class="cursor cursor6a" x="38" y="31" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item7">
+    <text class="copy" x="210" y="54" clip-path="url(#clip7a)">Quiet tools for Windows</text>
+    <g class="cursor-stage cursor-stage7a"><rect class="cursor cursor7a" x="92" y="31" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item8">
+    <text class="copy" x="210" y="54" clip-path="url(#clip8a)">Currently debugging my life.</text>
+    <g class="cursor-stage cursor-stage8a"><rect class="cursor cursor8a" x="67" y="31" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item9">
+    <text class="copy" x="210" y="35" clip-path="url(#clip9a)">Professional developer.</text>
+    <text class="copy" x="210" y="64" clip-path="url(#clip9b)">Amateur cat enthusiast.</text>
+    <g class="cursor-stage cursor-stage9a"><rect class="cursor cursor9a" x="92" y="12" width="3" height="24" rx="1"/></g>
+    <g class="cursor-stage cursor-stage9b"><rect class="cursor cursor9b" x="92" y="41" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item10">
+    <text class="copy" x="210" y="35" clip-path="url(#clip10a)">Powered by curiosity, Nachoneko,</text>
+    <text class="copy" x="210" y="64" clip-path="url(#clip10b)">and questionable decisions.</text>
+    <g class="cursor-stage cursor-stage10a"><rect class="cursor cursor10a" x="48" y="12" width="3" height="24" rx="1"/></g>
+    <g class="cursor-stage cursor-stage10b"><rect class="cursor cursor10b" x="72" y="41" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item11">
+    <text class="copy" x="210" y="35" clip-path="url(#clip11a)">Writing code while waiting</text>
+    <text class="copy" x="210" y="64" clip-path="url(#clip11b)">for someone to pat my head.</text>
+    <g class="cursor-stage cursor-stage11a"><rect class="cursor cursor11a" x="77" y="12" width="3" height="24" rx="1"/></g>
+    <g class="cursor-stage cursor-stage11b"><rect class="cursor cursor11b" x="72" y="41" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item12">
+    <text class="copy" x="210" y="54" clip-path="url(#clip12a)">Probably fixing something at 3 AM.</text>
+    <g class="cursor-stage cursor-stage12a"><rect class="cursor cursor12a" x="38" y="31" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item13">
+    <text class="copy" x="210" y="54" clip-path="url(#clip13a)">代码、记忆，还有一点猫</text>
+    <g class="cursor-stage cursor-stage13a"><rect class="cursor cursor13a" x="116" y="31" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item14">
+    <text class="copy" x="210" y="54" clip-path="url(#clip14a)">It works on my machine. Probably.</text>
+    <g class="cursor-stage cursor-stage14a"><rect class="cursor cursor14a" x="43" y="31" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item15">
+    <text class="copy" x="210" y="35" clip-path="url(#clip15a)">Open source developer,</text>
+    <text class="copy" x="210" y="64" clip-path="url(#clip15b)">full-time cat enjoyer.</text>
+    <g class="cursor-stage cursor-stage15a"><rect class="cursor cursor15a" x="97" y="12" width="3" height="24" rx="1"/></g>
+    <g class="cursor-stage cursor-stage15b"><rect class="cursor cursor15b" x="97" y="41" width="3" height="24" rx="1"/></g>
+  </g>
+  <g class="item item16">
+    <text class="copy" x="210" y="54" clip-path="url(#clip16a)">One more commit won't hurt.</text>
+    <g class="cursor-stage cursor-stage16a"><rect class="cursor cursor16a" x="72" y="31" width="3" height="24" rx="1"/></g>
   </g>
 </svg>
