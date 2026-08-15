@@ -1,121 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="64" viewBox="0 0 920 64" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="56" viewBox="0 0 760 56" role="img" aria-labelledby="title desc">
   <title id="title">白龙的动态打字介绍</title>
-  <desc id="desc">工程方向与中文格言依次以渐变文字输入，并显示闪烁的竖线光标。</desc>
+  <desc id="desc">三句关于 Agent 记忆、Windows 工具和猫的介绍依次打字显示。</desc>
 
   <defs>
-    <linearGradient id="text-gradient" gradientUnits="userSpaceOnUse" x1="180" y1="0" x2="740" y2="0">
-      <stop offset="0" stop-color="#54B8C4"/>
-      <stop offset="0.5" stop-color="#7896D2"/>
-      <stop offset="1" stop-color="#D5A15C"/>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="560" y2="0">
+      <stop offset="0" stop-color="#2F7F90"/>
+      <stop offset="1" stop-color="#536F9D"/>
     </linearGradient>
-    <clipPath id="clip-1"><rect id="clip-1-rect" x="250" y="0" width="425" height="64"/></clipPath>
-    <clipPath id="clip-2"><rect id="clip-2-rect" x="217" y="0" width="0" height="64"/></clipPath>
-    <clipPath id="clip-3"><rect id="clip-3-rect" x="240" y="0" width="0" height="64"/></clipPath>
-    <clipPath id="clip-4"><rect id="clip-4-rect" x="263" y="0" width="0" height="64"/></clipPath>
-    <clipPath id="clip-5"><rect id="clip-5-rect" x="263" y="0" width="0" height="64"/></clipPath>
-    <clipPath id="clip-6"><rect id="clip-6-rect" x="251" y="0" width="0" height="64"/></clipPath>
-    <clipPath id="clip-7"><rect id="clip-7-rect" x="311" y="0" width="0" height="64"/></clipPath>
-    <clipPath id="clip-8"><rect id="clip-8-rect" x="263" y="0" width="0" height="64"/></clipPath>
+    <clipPath id="clip1"><rect class="reveal reveal1" x="194" y="0" width="372" height="56"/></clipPath>
+    <clipPath id="clip2"><rect class="reveal reveal2" x="214" y="0" width="332" height="56"/></clipPath>
+    <clipPath id="clip3"><rect class="reveal reveal3" x="236" y="0" width="288" height="56"/></clipPath>
   </defs>
 
   <style>
-    .typing-text {
-      fill: url(#text-gradient);
-      font-family: "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei", serif;
-      font-size: 23px;
+    .copy {
+      fill: url(#ink);
+      font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
+      font-size: 22px;
       font-weight: 600;
-      letter-spacing: 0.5px;
+      letter-spacing: .2px;
+      text-anchor: middle;
     }
-    .line-1 { opacity: 1; animation: show-1 35.2s linear infinite; }
-    .line-2 { opacity: 0; animation: show-2 35.2s linear infinite; }
-    .line-3 { opacity: 0; animation: show-3 35.2s linear infinite; }
-    .line-4 { opacity: 0; animation: show-4 35.2s linear infinite; }
-    .line-5 { opacity: 0; animation: show-5 35.2s linear infinite; }
-    .line-6 { opacity: 0; animation: show-6 35.2s linear infinite; }
-    .line-7 { opacity: 0; animation: show-7 35.2s linear infinite; }
-    .line-8 { opacity: 0; animation: show-8 35.2s linear infinite; }
+    .line1 { opacity: 1; animation: show1 18s linear infinite; }
+    .line2 { opacity: 0; animation: show2 18s linear infinite; }
+    .line3 { opacity: 0; animation: show3 18s linear infinite; }
+    .reveal1 { animation: reveal1 18s steps(26, end) infinite; }
+    .reveal2 { animation: reveal2 18s steps(23, end) infinite; }
+    .reveal3 { animation: reveal3 18s steps(12, end) infinite; }
+    .cursor { fill: #2F7F90; animation-timing-function: steps(1, end); }
+    .cursor1 { animation: move1 18s steps(26, end) infinite, blink .8s step-end infinite; }
+    .cursor2 { animation: move2 18s steps(23, end) infinite, blink .8s step-end infinite; }
+    .cursor3 { animation: move3 18s steps(12, end) infinite, blink .8s step-end infinite; }
 
-    .cursor {
-      fill: #54B8C4;
-      animation: blink 0.72s step-end infinite;
+    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+    @keyframes show1 { 0%, 24% { opacity: 1; } 25%, 92% { opacity: 0; } 93%, 100% { opacity: 1; } }
+    @keyframes show2 { 0%, 28% { opacity: 0; } 29%, 57% { opacity: 1; } 58%, 100% { opacity: 0; } }
+    @keyframes show3 { 0%, 60% { opacity: 0; } 61%, 89% { opacity: 1; } 90%, 100% { opacity: 0; } }
+
+    @keyframes reveal1 { 0%, 24% { width: 372px; } 25%, 93% { width: 0; } 100% { width: 372px; } }
+    @keyframes reveal2 { 0%, 29% { width: 0; } 38%, 57% { width: 332px; } 58%, 100% { width: 0; } }
+    @keyframes reveal3 { 0%, 61% { width: 0; } 70%, 89% { width: 288px; } 90%, 100% { width: 0; } }
+
+    @keyframes move1 { 0%, 24% { transform: translateX(0); } 25%, 93% { transform: translateX(-348px); } 100% { transform: translateX(0); } }
+    @keyframes move2 { 0%, 29% { transform: translateX(-308px); } 38%, 57% { transform: translateX(0); } 58%, 100% { transform: translateX(-308px); } }
+    @keyframes move3 { 0%, 61% { transform: translateX(-264px); } 70%, 89% { transform: translateX(0); } 90%, 100% { transform: translateX(-264px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .line2, .line3, .cursor { display: none; }
     }
-    .cursor-1 { animation: move-1 35.2s steps(30, end) infinite, blink 0.72s step-end infinite; }
-    .cursor-2 { animation: move-2 35.2s steps(37, end) infinite, blink 0.72s step-end infinite; }
-    .cursor-3 { animation: move-3 35.2s steps(32, end) infinite, blink 0.72s step-end infinite; }
-    .cursor-4 { animation: move-4 35.2s steps(16, end) infinite, blink 0.72s step-end infinite; }
-    .cursor-5 { animation: move-5 35.2s steps(16, end) infinite, blink 0.72s step-end infinite; }
-    .cursor-6 { animation: move-6 35.2s steps(17, end) infinite, blink 0.72s step-end infinite; }
-    .cursor-7 { animation: move-7 35.2s steps(12, end) infinite, blink 0.72s step-end infinite; }
-    .cursor-8 { animation: move-8 35.2s steps(16, end) infinite, blink 0.72s step-end infinite; }
-
-    #clip-1-rect { animation: reveal-1 35.2s steps(30, end) infinite; }
-    #clip-2-rect { animation: reveal-2 35.2s steps(37, end) infinite; }
-    #clip-3-rect { animation: reveal-3 35.2s steps(32, end) infinite; }
-    #clip-4-rect { animation: reveal-4 35.2s steps(16, end) infinite; }
-    #clip-5-rect { animation: reveal-5 35.2s steps(16, end) infinite; }
-    #clip-6-rect { animation: reveal-6 35.2s steps(17, end) infinite; }
-    #clip-7-rect { animation: reveal-7 35.2s steps(12, end) infinite; }
-    #clip-8-rect { animation: reveal-8 35.2s steps(16, end) infinite; }
-
-    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
-    @keyframes show-1 { 0%, 11% { opacity: 1; } 12.5%, 100% { opacity: 0; } }
-    @keyframes show-2 { 0%, 12.4% { opacity: 0; } 12.5%, 23.5% { opacity: 1; } 25%, 100% { opacity: 0; } }
-    @keyframes show-3 { 0%, 24.9% { opacity: 0; } 25%, 36% { opacity: 1; } 37.5%, 100% { opacity: 0; } }
-    @keyframes show-4 { 0%, 37.4% { opacity: 0; } 37.5%, 48.5% { opacity: 1; } 50%, 100% { opacity: 0; } }
-    @keyframes show-5 { 0%, 49.9% { opacity: 0; } 50%, 61% { opacity: 1; } 62.5%, 100% { opacity: 0; } }
-    @keyframes show-6 { 0%, 62.4% { opacity: 0; } 62.5%, 73.5% { opacity: 1; } 75%, 100% { opacity: 0; } }
-    @keyframes show-7 { 0%, 74.9% { opacity: 0; } 75%, 86% { opacity: 1; } 87.5%, 100% { opacity: 0; } }
-    @keyframes show-8 { 0%, 87.4% { opacity: 0; } 87.5%, 98.5% { opacity: 1; } 100% { opacity: 0; } }
-
-    @keyframes reveal-1 { 0%, 1% { width: 0; } 6%, 11% { width: 425px; } 12.5%, 100% { width: 0; } }
-    @keyframes reveal-2 { 0%, 12.5%, 13.5% { width: 0; } 18.5%, 23.5% { width: 490px; } 25%, 100% { width: 0; } }
-    @keyframes reveal-3 { 0%, 25%, 26% { width: 0; } 31%, 36% { width: 445px; } 37.5%, 100% { width: 0; } }
-    @keyframes reveal-4 { 0%, 37.5%, 38.5% { width: 0; } 43.5%, 48.5% { width: 399px; } 50%, 100% { width: 0; } }
-    @keyframes reveal-5 { 0%, 50%, 51% { width: 0; } 56%, 61% { width: 399px; } 62.5%, 100% { width: 0; } }
-    @keyframes reveal-6 { 0%, 62.5%, 63.5% { width: 0; } 68.5%, 73.5% { width: 423px; } 75%, 100% { width: 0; } }
-    @keyframes reveal-7 { 0%, 75%, 76% { width: 0; } 81%, 86% { width: 302px; } 87.5%, 100% { width: 0; } }
-    @keyframes reveal-8 { 0%, 87.5%, 88.5% { width: 0; } 93.5%, 98.5% { width: 399px; } 100% { width: 0; } }
-
-    @keyframes move-1 { 0%, 1% { transform: translateX(-429px); } 6%, 11% { transform: translateX(0); } 12.5%, 100% { transform: translateX(-429px); } }
-    @keyframes move-2 { 0%, 12.5%, 13.5% { transform: translateX(-494px); } 18.5%, 23.5% { transform: translateX(0); } 25%, 100% { transform: translateX(-494px); } }
-    @keyframes move-3 { 0%, 25%, 26% { transform: translateX(-449px); } 31%, 36% { transform: translateX(0); } 37.5%, 100% { transform: translateX(-449px); } }
-    @keyframes move-4 { 0%, 37.5%, 38.5% { transform: translateX(-403px); } 43.5%, 48.5% { transform: translateX(0); } 50%, 100% { transform: translateX(-403px); } }
-    @keyframes move-5 { 0%, 50%, 51% { transform: translateX(-403px); } 56%, 61% { transform: translateX(0); } 62.5%, 100% { transform: translateX(-403px); } }
-    @keyframes move-6 { 0%, 62.5%, 63.5% { transform: translateX(-427px); } 68.5%, 73.5% { transform: translateX(0); } 75%, 100% { transform: translateX(-427px); } }
-    @keyframes move-7 { 0%, 75%, 76% { transform: translateX(-306px); } 81%, 86% { transform: translateX(0); } 87.5%, 100% { transform: translateX(-306px); } }
-    @keyframes move-8 { 0%, 87.5%, 88.5% { transform: translateX(-403px); } 93.5%, 98.5% { transform: translateX(0); } 100% { transform: translateX(-403px); } }
   </style>
 
-  <g class="line-1" opacity="1">
-    <text class="typing-text" x="250" y="41" textLength="421" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-1)">Building memory for LLM agents</text>
-    <rect class="cursor cursor-1" x="679" y="14" width="3" height="34" rx="1"/>
+  <g class="line1">
+    <text class="copy" x="380" y="37" clip-path="url(#clip1)">Building memory for agents</text>
+    <rect class="cursor cursor1" x="554" y="13" width="3" height="30" rx="1"/>
   </g>
-  <g class="line-2" opacity="0">
-    <text class="typing-text" x="217" y="41" textLength="486" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-2)">E.R.I.I / dual-track long-term memory</text>
-    <rect class="cursor cursor-2" x="711" y="14" width="3" height="34" rx="1"/>
+  <g class="line2">
+    <text class="copy" x="380" y="37" clip-path="url(#clip2)">Quiet tools for Windows</text>
+    <rect class="cursor cursor2" x="534" y="13" width="3" height="30" rx="1"/>
   </g>
-  <g class="line-3" opacity="0">
-    <text class="typing-text" x="240" y="41" textLength="441" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-3)">Windows tooling + AI experiments</text>
-    <rect class="cursor cursor-3" x="689" y="14" width="3" height="34" rx="1"/>
-  </g>
-  <g class="line-4" opacity="0">
-    <text class="typing-text" x="263" y="41" textLength="395" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-4)">既然选择了远方，便只顾风雨兼程。</text>
-    <rect class="cursor cursor-4" x="666" y="14" width="3" height="34" rx="1"/>
-  </g>
-  <g class="line-5" opacity="0">
-    <text class="typing-text" x="263" y="41" textLength="395" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-5)">路漫漫其修远兮，吾将上下而求索。</text>
-    <rect class="cursor cursor-5" x="666" y="14" width="3" height="34" rx="1"/>
-  </g>
-  <g class="line-6" opacity="0">
-    <text class="typing-text" x="251" y="41" textLength="419" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-6)">知我者谓我心忧，不知我者谓我何求。</text>
-    <rect class="cursor cursor-6" x="678" y="14" width="3" height="34" rx="1"/>
-  </g>
-  <g class="line-7" opacity="0">
-    <text class="typing-text" x="311" y="41" textLength="298" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-7)">天行健，君子以自强不息。</text>
-    <rect class="cursor cursor-7" x="617" y="14" width="3" height="34" rx="1"/>
-  </g>
-  <g class="line-8" opacity="0">
-    <text class="typing-text" x="263" y="41" textLength="395" lengthAdjust="spacingAndGlyphs" clip-path="url(#clip-8)">长风破浪会有时，直挂云帆济沧海。</text>
-    <rect class="cursor cursor-8" x="666" y="14" width="3" height="34" rx="1"/>
+  <g class="line3">
+    <text class="copy" x="380" y="37" clip-path="url(#clip3)">代码、记忆，还有一点猫</text>
+    <rect class="cursor cursor3" x="512" y="13" width="3" height="30" rx="1"/>
   </g>
 </svg>

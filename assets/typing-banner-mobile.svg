@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="72" viewBox="0 0 420 72" role="img" aria-labelledby="title desc">
+  <title id="title">白龙的移动端动态打字介绍</title>
+  <desc id="desc">三句简短介绍依次打字显示。</desc>
+
+  <defs>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="50" y1="0" x2="370" y2="0">
+      <stop offset="0" stop-color="#2F7F90"/>
+      <stop offset="1" stop-color="#536F9D"/>
+    </linearGradient>
+    <clipPath id="clip1"><rect class="reveal reveal1" x="42" y="0" width="336" height="72"/></clipPath>
+    <clipPath id="clip2"><rect class="reveal reveal2" x="60" y="0" width="300" height="72"/></clipPath>
+    <clipPath id="clip3"><rect class="reveal reveal3" x="70" y="0" width="280" height="72"/></clipPath>
+  </defs>
+
+  <style>
+    .copy {
+      fill: url(#ink);
+      font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
+      font-size: 20px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+    .line1 { opacity: 1; animation: show1 18s linear infinite; }
+    .line2 { opacity: 0; animation: show2 18s linear infinite; }
+    .line3 { opacity: 0; animation: show3 18s linear infinite; }
+    .reveal1 { animation: reveal1 18s steps(26, end) infinite; }
+    .reveal2 { animation: reveal2 18s steps(23, end) infinite; }
+    .reveal3 { animation: reveal3 18s steps(12, end) infinite; }
+    .cursor1 { animation: move1 18s steps(26, end) infinite, blink .8s step-end infinite; }
+    .cursor2 { animation: move2 18s steps(23, end) infinite, blink .8s step-end infinite; }
+    .cursor3 { animation: move3 18s steps(12, end) infinite, blink .8s step-end infinite; }
+    .cursor { fill: #2F7F90; }
+
+    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
+    @keyframes show1 { 0%, 24% { opacity: 1; } 25%, 92% { opacity: 0; } 93%, 100% { opacity: 1; } }
+    @keyframes show2 { 0%, 28% { opacity: 0; } 29%, 57% { opacity: 1; } 58%, 100% { opacity: 0; } }
+    @keyframes show3 { 0%, 60% { opacity: 0; } 61%, 89% { opacity: 1; } 90%, 100% { opacity: 0; } }
+    @keyframes reveal1 { 0%, 24% { width: 336px; } 25%, 93% { width: 0; } 100% { width: 336px; } }
+    @keyframes reveal2 { 0%, 29% { width: 0; } 38%, 57% { width: 300px; } 58%, 100% { width: 0; } }
+    @keyframes reveal3 { 0%, 61% { width: 0; } 70%, 89% { width: 280px; } 90%, 100% { width: 0; } }
+    @keyframes move1 { 0%, 24% { transform: translateX(0); } 25%, 93% { transform: translateX(-312px); } 100% { transform: translateX(0); } }
+    @keyframes move2 { 0%, 29% { transform: translateX(-276px); } 38%, 57% { transform: translateX(0); } 58%, 100% { transform: translateX(-276px); } }
+    @keyframes move3 { 0%, 61% { transform: translateX(-256px); } 70%, 89% { transform: translateX(0); } 90%, 100% { transform: translateX(-256px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .line2, .line3, .cursor { display: none; }
+    }
+  </style>
+
+  <g class="line1">
+    <text class="copy" x="210" y="45" clip-path="url(#clip1)">Building memory for agents</text>
+    <rect class="cursor cursor1" x="366" y="17" width="3" height="30" rx="1"/>
+  </g>
+  <g class="line2">
+    <text class="copy" x="210" y="45" clip-path="url(#clip2)">Quiet tools for Windows</text>
+    <rect class="cursor cursor2" x="348" y="17" width="3" height="30" rx="1"/>
+  </g>
+  <g class="line3">
+    <text class="copy" x="210" y="45" clip-path="url(#clip3)">代码、记忆，还有一点猫</text>
+    <rect class="cursor cursor3" x="338" y="17" width="3" height="30" rx="1"/>
+  </g>
+</svg>
