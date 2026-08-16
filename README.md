@@ -1,7 +1,7 @@
 <div align="center">
 
-  <a href="https://github.com/bailong-Hakuryu">
-    <img src="./assets/banner.jpg" alt="Nachoneko 猫系主题横幅" width="100%"/>
+  <a href="https://github.com/bailong-Hakuryu" aria-label="访问白龙的 GitHub 主页">
+    <img src="./assets/banner.jpg" alt="Nachoneko 猫系主题横幅" width="100%" loading="eager"/>
   </a>
 
   <br/>
@@ -13,29 +13,31 @@
 
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/typing-banner-mobile.svg"/>
-    <img src="./assets/typing-banner.svg" alt="白龙的动态打字介绍" width="760"/>
+    <img src="./assets/typing-banner.svg" alt="白龙的动态打字介绍" width="760" loading="lazy"/>
   </picture>
 
   <sub>欢迎来到我的代码小窝。这里有记忆、工具，也有一点猫。</sub>
 
   <br/><br/>
 
-  <a href="https://xn--9wyy09f.cn"><img alt="Blog" src="https://img.shields.io/badge/BLOG-白龙.cn-72B8C4?style=flat&logo=googlechrome&logoColor=white"/></a>
-  <a href="https://x.com/Hakuryubailong"><img alt="X" src="https://img.shields.io/badge/X-FOLLOW-819CBF?style=flat&logo=x&logoColor=white"/></a>
-  <a href="mailto:bailong996633@gmail.com"><img alt="Email" src="https://img.shields.io/badge/MAIL-HELLO-526A82?style=flat&logo=gmail&logoColor=white"/></a>
+  <a href="https://xn--9wyy09f.cn" target="_blank" rel="noopener noreferrer"><img alt="Blog - 白龙.cn" src="https://img.shields.io/badge/BLOG-白龙.cn-72B8C4?style=flat&logo=googlechrome&logoColor=white"/></a>
+  <a href="https://x.com/Hakuryubailong" target="_blank" rel="noopener noreferrer"><img alt="X - Follow @Hakuryubailong" src="https://img.shields.io/badge/X-FOLLOW-819CBF?style=flat&logo=x&logoColor=white"/></a>
+  <a href="mailto:bailong996633@gmail.com"><img alt="Email - bailong996633@gmail.com" src="https://img.shields.io/badge/MAIL-HELLO-526A82?style=flat&logo=gmail&logoColor=white"/></a>
 
-  <p><sub><a href="#profile-about">ABOUT</a> · <a href="#profile-projects">PROJECTS</a> · <a href="#profile-toolbox">TOOLBOX</a> · <a href="#profile-github">GITHUB</a></sub></p>
+  <nav aria-label="页面导航">
+    <p><sub><a href="#profile-about">ABOUT</a> · <a href="#profile-projects">PROJECTS</a> · <a href="#profile-toolbox">TOOLBOX</a> · <a href="#profile-github">GITHUB</a></sub></p>
+  </nav>
 
 </div>
 
-<a name="profile-about"></a>
+<section id="profile-about">
 
 ## About me · 关于我
 
 你好，我是白龙，一条在研究 **Agent 长期记忆**、也会制作 **Windows 小工具** 的龙。
 
 <p align="center">
-  <img src="./assets/nachoneko-sticker.png" width="120" alt="Nachoneko 猫娘贴纸"/>
+  <img src="./assets/nachoneko-sticker.png" width="120" alt="Nachoneko 猫娘贴纸" loading="lazy"/>
 </p>
 
 - 🧠 关注 Agent Memory、RAG 与 Evaluation
@@ -45,11 +47,13 @@
 
 > **Currently building:** [E.R.I.I](https://github.com/bailong-Hakuryu/E.R.I.I) — 从记忆形成、巩固到检索，探索 Agent 可以长期依赖的记忆能力。
 
-<sub>Visual inspiration: <a href="https://amashiro.com/profile/">Nachoneko / 甘城なつき</a> ♡</sub>
+<sub>Visual inspiration: <a href="https://amashiro.com/profile/" target="_blank" rel="noopener noreferrer">Nachoneko / 甘城なつき</a> ♡</sub>
+
+</section>
 
 ---
 
-<a name="profile-projects"></a>
+<section id="profile-projects">
 
 ## Things I build · 正在做的事
 
@@ -75,9 +79,11 @@
 
 `Python` · `LLM` · `Character AI`
 
+</section>
+
 ---
 
-<a name="profile-toolbox"></a>
+<section id="profile-toolbox">
 
 ## Toolbox · 工具箱
 
@@ -102,9 +108,11 @@
 
 </div>
 
+</section>
+
 ---
 
-<a name="profile-github"></a>
+<section id="profile-github">
 
 ## GitHub notes · 足迹
 
@@ -112,7 +120,7 @@
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/output/github-contribution-grid-snake-dark.svg"/>
-    <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/output/github-contribution-grid-snake.svg" alt="白龙的 GitHub 贡献动画" width="100%"/>
+    <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/output/github-contribution-grid-snake.svg" alt="白龙的 GitHub 贡献动画" width="100%" loading="lazy"/>
   </picture>
 
 </div>
@@ -123,11 +131,13 @@
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/main/metrics-dark.svg"/>
-      <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/main/metrics.svg" alt="白龙的 GitHub 统计" width="480"/>
+      <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/main/metrics.svg" alt="白龙的 GitHub 统计" width="480" loading="lazy"/>
     </picture>
-    <p><sub>由 <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a> 每日记录。</sub></p>
+    <p><sub>由 <a href="https://github.com/lowlighter/metrics" target="_blank" rel="noopener noreferrer">lowlighter/metrics</a> 每日记录。</sub></p>
   </div>
 </details>
+
+</section>
 
 <br/>
 
