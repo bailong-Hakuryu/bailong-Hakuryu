@@ -33,6 +33,9 @@
   </defs>
 
   <style>
+    /* 强制 GPU 加速以提高移动端兼容性 */
+    svg { transform: translateZ(0); -webkit-transform: translateZ(0); }
+
     .copy {
       fill: url(#ink);
       font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
@@ -40,8 +43,28 @@
       font-weight: 600;
       text-anchor: middle;
     }
-    .item { opacity: 0; animation: show 64s linear var(--delay) infinite; }
-    .cursor { fill: #2F7F90; }
+    .item {
+      opacity: 0;
+      animation: show 64s linear var(--delay) infinite;
+      /* 强制硬件加速 */
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      will-change: opacity;
+    }
+    .cursor {
+      fill: #2F7F90;
+      /* 强制硬件加速 */
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+    }
+
+    /* 确保 clipPath 动画在移动端工作 */
+    .reveal {
+      /* 强制硬件加速 */
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      will-change: width;
+    }
     .item1 { --delay: -2.8s; opacity: 1; }
     .reveal1a { --delay: -2.8s; animation: reveal1a 64s steps(26, end) var(--delay) infinite; }
     .cursor-stage1a { animation: cursorStage1a 64s linear var(--delay) infinite; }

@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="88" viewBox="0 0 420 88" role="img" aria-labelledby="title desc">
+  <title id="title">白龙的移动端动态打字介绍</title>
+  <desc id="desc">开发与猫系短句交错显示，使用兼容的遮罩打字效果。</desc>
+
+  <defs>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="36" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#2F7F90"/>
+      <stop offset=".54" stop-color="#536F9D"/>
+      <stop offset="1" stop-color="#72B8C4"/>
+    </linearGradient>
+
+    <!-- 遮罩方式实现打字效果 -->
+    <mask id="typeMask1"><rect fill="white" x="0" y="0" width="0" height="88"><animate attributeName="width" from="0" to="420" dur="2s" begin="-2.8s;15.2s" fill="freeze"/></rect></mask>
+    <mask id="typeMask2"><rect fill="white" x="0" y="0" width="0" height="88"><animate attributeName="width" from="0" to="420" dur="2s" begin="1.2s;19.2s" fill="freeze"/></rect></mask>
+    <mask id="typeMask3"><rect fill="white" x="0" y="0" width="0" height="88"><animate attributeName="width" from="0" to="420" dur="2.5s" begin="5.2s;23.2s" fill="freeze"/></rect></mask>
+    <mask id="typeMask4"><rect fill="white" x="0" y="0" width="0" height="88"><animate attributeName="width" from="0" to="420" dur="2s" begin="9.2s;27.2s" fill="freeze"/></rect></mask>
+    <mask id="typeMask5"><rect fill="white" x="0" y="0" width="0" height="88"><animate attributeName="width" from="0" to="420" dur="2.5s" begin="13.2s;31.2s" fill="freeze"/></rect></mask>
+    <mask id="typeMask6"><rect fill="white" x="0" y="0" width="0" height="88"><animate attributeName="width" from="0" to="420" dur="2s" begin="17.2s;35.2s" fill="freeze"/></rect></mask>
+  </defs>
+
+  <style>
+    .copy {
+      fill: url(#ink);
+      font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
+      font-size: 16px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+
+    .item {
+      opacity: 0;
+    }
+
+    .item1 { animation: fadeInOut 18s -2.8s infinite; opacity: 1; }
+    .item2 { animation: fadeInOut 18s 1.2s infinite; }
+    .item3 { animation: fadeInOut 18s 5.2s infinite; }
+    .item4 { animation: fadeInOut 18s 9.2s infinite; }
+    .item5 { animation: fadeInOut 18s 13.2s infinite; }
+    .item6 { animation: fadeInOut 18s 17.2s infinite; }
+
+    @keyframes fadeInOut {
+      0%, 11.1% { opacity: 1; }
+      11.2%, 100% { opacity: 0; }
+    }
+
+    .cursor {
+      fill: #2F7F90;
+      animation: blink 0.8s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 48% { opacity: 1; }
+      49%, 100% { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .item { display: none; }
+      .item1 { display: inline; opacity: 1; }
+      .cursor { display: none; }
+      mask rect { width: 420px !important; }
+    }
+  </style>
+
+  <!-- Item 1 -->
+  <g class="item item1">
+    <g mask="url(#typeMask1)">
+      <text class="copy" x="210" y="54">Building memory for agents</text>
+    </g>
+    <rect class="cursor" x="340" y="31" width="3" height="24" rx="1">
+      <animate attributeName="x" from="77" to="340" dur="2s" begin="-2.8s;15.2s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Item 2 -->
+  <g class="item item2">
+    <g mask="url(#typeMask2)">
+      <text class="copy" x="210" y="54">sudo make me a better developer</text>
+    </g>
+    <rect class="cursor" x="367" y="31" width="3" height="24" rx="1">
+      <animate attributeName="x" from="53" to="367" dur="2s" begin="1.2s;19.2s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Item 3 - Two lines -->
+  <g class="item item3">
+    <g mask="url(#typeMask3)">
+      <text class="copy" x="210" y="35">Coding until Nachoneko</text>
+      <text class="copy" x="210" y="64">says I'm doing well.</text>
+    </g>
+    <rect class="cursor" x="313" y="41" width="3" height="24" rx="1">
+      <animate attributeName="x" from="97" to="223" dur="1.2s" begin="5.2s;23.2s" fill="freeze"/>
+      <animate attributeName="x" from="106" to="313" dur="1.3s" begin="6.4s;24.4s" fill="freeze"/>
+      <animate attributeName="y" from="12" to="12" dur="1.2s" begin="5.2s;23.2s" fill="freeze"/>
+      <animate attributeName="y" from="41" to="41" dur="1.3s" begin="6.4s;24.4s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Item 4 -->
+  <g class="item item4">
+    <g mask="url(#typeMask4)">
+      <text class="copy" x="210" y="54">404: Motivation not found.</text>
+    </g>
+    <rect class="cursor" x="340" y="31" width="3" height="24" rx="1">
+      <animate attributeName="x" from="77" to="340" dur="2s" begin="9.2s;27.2s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Item 5 - Two lines -->
+  <g class="item item5">
+    <g mask="url(#typeMask5)">
+      <text class="copy" x="210" y="35">Powered by code,</text>
+      <text class="copy" x="210" y="64">curiosity, and cat energy.</text>
+    </g>
+    <rect class="cursor" x="340" y="41" width="3" height="24" rx="1">
+      <animate attributeName="x" from="126" to="292" dur="1s" begin="13.2s;31.2s" fill="freeze"/>
+      <animate attributeName="x" from="77" to="340" dur="1.5s" begin="14.2s;32.2s" fill="freeze"/>
+      <animate attributeName="y" from="12" to="12" dur="1s" begin="13.2s;31.2s" fill="freeze"/>
+      <animate attributeName="y" from="41" to="41" dur="1.5s" begin="14.2s;32.2s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Item 6 -->
+  <g class="item item6">
+    <g mask="url(#typeMask6)">
+      <text class="copy" x="210" y="54">代码、记忆，还有一点猫 🐈</text>
+    </g>
+    <rect class="cursor" x="313" y="31" width="3" height="24" rx="1">
+      <animate attributeName="x" from="116" to="313" dur="2s" begin="17.2s;35.2s" fill="freeze"/>
+    </rect>
+  </g>
+</svg>
