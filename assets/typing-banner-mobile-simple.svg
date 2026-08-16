@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="88" viewBox="0 0 420 88" role="img" aria-labelledby="title desc">
+  <title id="title">白龙的移动端动态打字介绍</title>
+  <desc id="desc">开发与猫系短句交错显示，完全兼容移动端浏览器。</desc>
+
+  <defs>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="36" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#2F7F90"/>
+      <stop offset=".54" stop-color="#536F9D"/>
+      <stop offset="1" stop-color="#72B8C4"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .copy {
+      fill: url(#ink);
+      font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
+      font-size: 16px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+
+    /* 每个句子的淡入淡出 */
+    .sentence {
+      opacity: 0;
+    }
+
+    .s1 { animation: showHide 96s -2.8s infinite; opacity: 1; }
+    .s2 { animation: showHide 96s 3.2s infinite; }
+    .s3 { animation: showHide 96s 9.2s infinite; }
+    .s4 { animation: showHide 96s 15.2s infinite; }
+    .s5 { animation: showHide 96s 21.2s infinite; }
+    .s6 { animation: showHide 96s 27.2s infinite; }
+    .s7 { animation: showHide 96s 33.2s infinite; }
+    .s8 { animation: showHide 96s 39.2s infinite; }
+    .s9 { animation: showHide 96s 45.2s infinite; }
+    .s10 { animation: showHide 96s 51.2s infinite; }
+    .s11 { animation: showHide 96s 57.2s infinite; }
+    .s12 { animation: showHide 96s 63.2s infinite; }
+    .s13 { animation: showHide 96s 69.2s infinite; }
+    .s14 { animation: showHide 96s 75.2s infinite; }
+    .s15 { animation: showHide 96s 81.2s infinite; }
+    .s16 { animation: showHide 96s 87.2s infinite; }
+
+    @keyframes showHide {
+      0%, 6.25% { opacity: 1; }
+      6.26%, 100% { opacity: 0; }
+    }
+
+    /* 光标闪烁 */
+    .cursor {
+      fill: #2F7F90;
+      animation: blink 0.8s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 48% { opacity: 1; }
+      49%, 100% { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .sentence { display: none; }
+      .s1 { display: inline; opacity: 1; }
+      .cursor { display: none; }
+    }
+  </style>
+
+  <!-- 句子 1 -->
+  <g class="sentence s1">
+    <text class="copy" x="210" y="54">Building memory for agents</text>
+    <rect class="cursor" x="340" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 2 -->
+  <g class="sentence s2">
+    <text class="copy" x="210" y="54">sudo make me a better developer</text>
+    <rect class="cursor" x="367" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 3 - 两行 -->
+  <g class="sentence s3">
+    <text class="copy" x="210" y="35">Coding until Nachoneko</text>
+    <text class="copy" x="210" y="64">says I'm doing well.</text>
+    <rect class="cursor" x="313" y="41" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 4 -->
+  <g class="sentence s4">
+    <text class="copy" x="210" y="54">404: Motivation not found.</text>
+    <rect class="cursor" x="340" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 5 - 两行 -->
+  <g class="sentence s5">
+    <text class="copy" x="210" y="35">Powered by code,</text>
+    <text class="copy" x="210" y="64">curiosity, and cat energy.</text>
+    <rect class="cursor" x="340" y="41" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 6 -->
+  <g class="sentence s6">
+    <text class="copy" x="210" y="54">Compiling thoughts into reality...</text>
+    <rect class="cursor" x="380" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 7 -->
+  <g class="sentence s7">
+    <text class="copy" x="210" y="54">Quiet tools for Windows</text>
+    <rect class="cursor" x="327" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 8 -->
+  <g class="sentence s8">
+    <text class="copy" x="210" y="54">Currently debugging my life.</text>
+    <rect class="cursor" x="351" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 9 - 两行 -->
+  <g class="sentence s9">
+    <text class="copy" x="210" y="35">Professional developer.</text>
+    <text class="copy" x="210" y="64">Amateur cat enthusiast.</text>
+    <rect class="cursor" x="327" y="41" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 10 - 两行 -->
+  <g class="sentence s10">
+    <text class="copy" x="210" y="35">Powered by curiosity, Nachoneko,</text>
+    <text class="copy" x="210" y="64">and questionable decisions.</text>
+    <rect class="cursor" x="346" y="41" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 11 - 两行 -->
+  <g class="sentence s11">
+    <text class="copy" x="210" y="35">Writing code while waiting</text>
+    <text class="copy" x="210" y="64">for someone to pat my head.</text>
+    <rect class="cursor" x="346" y="41" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 12 -->
+  <g class="sentence s12">
+    <text class="copy" x="210" y="54">Probably fixing something at 3 AM.</text>
+    <rect class="cursor" x="380" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 13 -->
+  <g class="sentence s13">
+    <text class="copy" x="210" y="54">代码、记忆，还有一点猫</text>
+    <rect class="cursor" x="299" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 14 -->
+  <g class="sentence s14">
+    <text class="copy" x="210" y="54">It works on my machine. Probably.</text>
+    <rect class="cursor" x="376" y="31" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 15 - 两行 -->
+  <g class="sentence s15">
+    <text class="copy" x="210" y="35">Open source developer,</text>
+    <text class="copy" x="210" y="64">full-time cat enjoyer.</text>
+    <rect class="cursor" x="321" y="41" width="3" height="24" rx="1"/>
+  </g>
+
+  <!-- 句子 16 -->
+  <g class="sentence s16">
+    <text class="copy" x="210" y="54">One more commit won't hurt.</text>
+    <rect class="cursor" x="346" y="31" width="3" height="24" rx="1"/>
+  </g>
+</svg>
