@@ -32,10 +32,6 @@
 
   <br/><br/>
 
-  <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=bailong-Hakuryu&color=72B8C4&style=flat-square&label=访问量"/>
-  </p>
-
   <nav aria-label="页面导航">
     <p><sub><a href="#profile-about">ABOUT</a> · <a href="#profile-projects">PROJECTS</a> · <a href="#profile-toolbox">TOOLBOX</a> · <a href="#profile-github">GITHUB</a></sub></p>
   </nav>
