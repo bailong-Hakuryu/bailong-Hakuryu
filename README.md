@@ -8,9 +8,8 @@
 
   <h1>你好，我是白龙 ✨</h1>
 
-  <p align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=72B8C4&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Agent+Memory+%C2%B7+Windows+Tooling+%C2%B7+LLM+Experiments;%E8%AE%A9+Agent+%E8%AE%B0%E5%BE%97%E8%B5%B0%E8%BF%87%E7%9A%84%E8%B7%AF%EF%BC%8C%E4%B9%9F%E8%AE%A9%E5%B7%A5%E5%85%B7%E5%AE%89%E9%9D%99%E5%9C%B0%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98%E3%80%82" alt="Typing SVG" />
-  </p>
+  <p><strong>Agent Memory · Windows Tooling · LLM Experiments</strong></p>
+  <p>让 Agent 记得走过的路，也让工具安静地解决问题。</p>
 
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/typing-banner-mobile-simple.svg"/>
@@ -43,7 +42,7 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16&height=120&section=header&text=&fontSize=0&animation=twinkling"/>
+<br/>
 
 <section id="profile-about">
 
@@ -85,7 +84,7 @@
 
 </section>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16&height=100&section=footer"/>
+<br/>
 
 <section id="profile-projects">
 
@@ -105,10 +104,6 @@
 
 `Python` · `LLM` · `RAG` · `Evaluation`
 
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=bailong-Hakuryu&repo=E.R.I.I&theme=default&bg_color=f0f7f9&title_color=2F7F90&icon_color=72B8C4&text_color=526A82&border_color=DDE9EB&hide_border=false"/>
-
 </td>
 <td width="50%" valign="top">
 
@@ -119,10 +114,6 @@
 <br/>
 
 `C++` · `Windows` · `ACL` · `Tooling`
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=bailong-Hakuryu&repo=UpdateLock&theme=default&bg_color=f0f7f9&title_color=2F7F90&icon_color=72B8C4&text_color=526A82&border_color=DDE9EB&hide_border=false"/>
 
 </td>
 </tr>
@@ -142,10 +133,6 @@
 
 `Python` · `LLM` · `Character AI`
 
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=bailong-Hakuryu&repo=KouriChat&theme=default&bg_color=f0f7f9&title_color=2F7F90&icon_color=72B8C4&text_color=526A82&border_color=DDE9EB&hide_border=false"/>
-
 </td>
 <td width="50%" valign="top">
 
@@ -157,7 +144,7 @@
 
 </section>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16&height=100&section=footer"/>
+<br/>
 
 <section id="profile-toolbox">
 
@@ -172,40 +159,21 @@
 
 <br/><br/>
 
-<table>
-<tr>
-<td align="center" width="96">
-  <img src="https://skillicons.dev/icons?i=python" width="48" height="48" alt="Python" />
-  <br/>Python
-</td>
-<td align="center" width="96">
-  <img src="https://skillicons.dev/icons?i=cpp" width="48" height="48" alt="C++" />
-  <br/>C++
-</td>
-<td align="center" width="96">
-  <img src="https://skillicons.dev/icons?i=powershell" width="48" height="48" alt="PowerShell" />
-  <br/>PowerShell
-</td>
-<td align="center" width="96">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" width="48" height="48" alt="LLM" />
-  <br/>LLM
-</td>
-<td align="center" width="96">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg" width="48" height="48" alt="Windows" />
-  <br/>Windows
-</td>
-</tr>
-</table>
+<code>PYTHON</code>&nbsp;
+<code>C++</code>&nbsp;
+<code>POWERSHELL</code>&nbsp;
+<code>LLM</code>&nbsp;
+<code>RAG</code>&nbsp;
+<code>WINDOWS</code>
 
-<br/>
-
+<br/><br/>
 <sub>Context first · Evidence driven · Quiet tooling · Reversible</sub>
 
 </div>
 
 </section>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16&height=100&section=footer"/>
+<br/>
 
 <section id="profile-github">
 
@@ -213,19 +181,10 @@
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=bailong-Hakuryu&show_icons=true&theme=default&bg_color=f0f7f9&title_color=2F7F90&icon_color=72B8C4&text_color=526A82&border_color=DDE9EB&hide_border=false&count_private=true&include_all_commits=true"/>
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=bailong-Hakuryu&theme=default&background=f0f7f9&ring=2F7F90&fire=72B8C4&currStreakLabel=536F9D&border=DDE9EB&stroke=DDE9EB&currStreakNum=2F7F90&sideNums=526A82&sideLabels=526A82&dates=526A82"/>
-
-<br/><br/>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/output/github-contribution-grid-snake-dark.svg"/>
   <img src="https://raw.githubusercontent.com/bailong-Hakuryu/bailong-Hakuryu/output/github-contribution-grid-snake.svg" alt="白龙的 GitHub 贡献动画" width="100%" loading="lazy"/>
 </picture>
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bailong-Hakuryu&layout=compact&theme=default&bg_color=f0f7f9&title_color=2F7F90&text_color=526A82&border_color=DDE9EB&hide_border=false&langs_count=6"/>
 
 </div>
 
@@ -243,13 +202,12 @@
 
 </section>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16&height=120&section=footer"/>
+<br/>
 
 <div align="center">
 
-<img width="600" src="https://capsule-render.vercel.app/api?type=transparent&fontColor=72B8C4&text=Thanks%20for%20visiting&height=80&fontSize=35&fontAlign=50&fontAlignY=50&desc=またね、下一段记忆见%20♡&descSize=20&descAlign=50&descAlignY=70"/>
-
-<br/>
+<sub>谢谢你路过这间小小的代码房间 ♡</sub>
+<h3>またね，下一段记忆见</h3>
 
 <p>
   <a href="https://xn--9wyy09f.cn" target="_blank" rel="noopener noreferrer">BLOG</a>&nbsp; · &nbsp;
@@ -257,7 +215,5 @@
   <a href="mailto:bailong996633@gmail.com">MAIL</a>&nbsp; · &nbsp;
   <a href="https://github.com/bailong-Hakuryu">GITHUB</a>
 </p>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16&height=100&section=footer&reversal=true"/>
 
 </div>
