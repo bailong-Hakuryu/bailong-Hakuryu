@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>移动端打字动画测试</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0d1117;
+      color: #c9d1d9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #72B8C4;
+    }
+
+    .banner-wrapper {
+      background: #161b22;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      background: #21262d;
+      border-radius: 6px;
+      padding: 15px;
+      margin-top: 20px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .info h2 {
+      margin-top: 0;
+      font-size: 16px;
+      color: #72B8C4;
+    }
+
+    .info code {
+      background: #161b22;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+      color: #79c0ff;
+    }
+
+    .status {
+      margin-top: 10px;
+      padding: 10px;
+      background: #1c2128;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .good { color: #3fb950; }
+    .warning { color: #d29922; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 移动端打字动画测试</h1>
+
+    <div class="banner-wrapper">
+      <img src="./assets/typing-banner-mobile.svg" alt="打字动画" width="100%"/>
+    </div>
+
+    <div class="info">
+      <h2>动画信息</h2>
+      <p>• <strong>循环周期:</strong> 64 秒</p>
+      <p>• <strong>句子数量:</strong> 16 句</p>
+      <p>• <strong>每句显示:</strong> 约 4 秒</p>
+      <p>• <strong>打字效果:</strong> 逐字显现</p>
+
+      <h2 style="margin-top: 20px;">检查清单</h2>
+      <p>✓ 动画是否在播放？</p>
+      <p>✓ 文字是否逐字打出？</p>
+      <p>✓ 是否会循环到下一句？</p>
+      <p>✓ 光标是否在闪烁？</p>
+
+      <div class="status">
+        <strong>系统设置检查:</strong><br>
+        如果动画不动，请检查:<br>
+        <code class="warning">设置 → 辅助功能 → 减少动态效果</code><br>
+        确保此选项为<span class="good"> 关闭 ✓</span>
+      </div>
+    </div>
+
+    <div class="info">
+      <h2>预期行为</h2>
+      <p style="font-size: 13px; color: #8b949e;">
+        动画应该每 4 秒左右切换到下一句话，包含英文和中文句子，
+        共 16 句循环播放。如果一直卡在同一句，可能是：
+      </p>
+      <p style="font-size: 13px;">
+        1. 浏览器缓存了旧版本<br>
+        2. 系统开启了"减少动态效果"<br>
+        3. GitHub 的移动端渲染限制
+      </p>
+    </div>
+
+    <div class="info">
+      <h2>句子列表</h2>
+      <ol style="font-size: 12px; color: #8b949e; padding-left: 20px;">
+        <li>Building memory for agents</li>
+        <li>sudo make me a better developer</li>
+        <li>Coding until Nachoneko says I'm doing well.</li>
+        <li>404: Motivation not found.</li>
+        <li>Powered by code, curiosity, and cat energy.</li>
+        <li>Compiling thoughts into reality...</li>
+        <li>Quiet tools for Windows</li>
+        <li>Currently debugging my life.</li>
+        <li>Professional developer. Amateur cat enthusiast.</li>
+        <li>Powered by curiosity, Nachoneko, and questionable decisions.</li>
+        <li>Writing code while waiting for someone to pat my head.</li>
+        <li style="color: #d29922;"><strong>Probably fixing something at 3 AM.</strong> ← 截图显示的</li>
+        <li>代码、记忆，还有一点猫</li>
+        <li>It works on my machine. Probably.</li>
+        <li>Open source developer, full-time cat enjoyer.</li>
+        <li>One more commit won't hurt.</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    // 记录页面加载时间
+    const loadTime = new Date().toLocaleString('zh-CN');
+    console.log('页面加载时间:', loadTime);
+
+    // 检测是否启用了减少动画
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) {
+      const statusDiv = document.querySelector('.status');
+      statusDiv.innerHTML += '<br><br><span class="warning">⚠️ 检测到系统启用了"减少动态效果"，动画可能被禁用</span>';
+    }
+  </script>
+</body>
+</html>
