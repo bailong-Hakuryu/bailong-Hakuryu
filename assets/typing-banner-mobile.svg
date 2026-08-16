@@ -45,152 +45,152 @@
     .item1 { --delay: -2.8s; opacity: 1; }
     .reveal1a { --delay: -2.8s; animation: reveal1a 64s steps(26, end) var(--delay) infinite; }
     .cursor-stage1a { animation: cursorStage1a 64s linear var(--delay) infinite; }
-    .cursor1a { animation: move1a 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor1a { animation: move1a 64s steps(26, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal1a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
     @keyframes move1a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage1a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item2 { --delay: 1.2000000000000002s;  }
     .reveal2a { --delay: 1.2000000000000002s; animation: reveal2a 64s steps(31, end) var(--delay) infinite; }
     .cursor-stage2a { animation: cursorStage2a 64s linear var(--delay) infinite; }
-    .cursor2a { animation: move2a 64s steps(31, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor2a { animation: move2a 64s steps(31, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal2a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 311px; } 6.23438%, 100% { width: 0; } }
     @keyframes move2a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(311px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage2a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item3 { --delay: 5.2s;  }
     .reveal3a { --delay: 5.2s; animation: reveal3a 64s steps(22, end) var(--delay) infinite; }
     .cursor-stage3a { animation: cursorStage3a 64s linear var(--delay) infinite; }
-    .cursor3a { animation: move3a 64s steps(22, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor3a { animation: move3a 64s steps(22, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal3a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 223px; } 6.23438%, 100% { width: 0; } }
     @keyframes move3a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(223px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage3a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
     .reveal3b { --delay: 5.2s; animation: reveal3b 64s steps(20, end) var(--delay) infinite; }
     .cursor-stage3b { animation: cursorStage3b 64s linear var(--delay) infinite; }
-    .cursor3b { animation: move3b 64s steps(20, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor3b { animation: move3b 64s steps(20, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal3b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 204px; } 6.23438%, 100% { width: 0; } }
     @keyframes move3b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(204px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage3b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item4 { --delay: 9.2s;  }
     .reveal4a { --delay: 9.2s; animation: reveal4a 64s steps(26, end) var(--delay) infinite; }
     .cursor-stage4a { animation: cursorStage4a 64s linear var(--delay) infinite; }
-    .cursor4a { animation: move4a 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor4a { animation: move4a 64s steps(26, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal4a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
     @keyframes move4a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage4a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item5 { --delay: 13.2s;  }
     .reveal5a { --delay: 13.2s; animation: reveal5a 64s steps(16, end) var(--delay) infinite; }
     .cursor-stage5a { animation: cursorStage5a 64s linear var(--delay) infinite; }
-    .cursor5a { animation: move5a 64s steps(16, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor5a { animation: move5a 64s steps(16, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal5a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 165px; } 6.23438%, 100% { width: 0; } }
     @keyframes move5a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(165px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage5a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
     .reveal5b { --delay: 13.2s; animation: reveal5b 64s steps(26, end) var(--delay) infinite; }
     .cursor-stage5b { animation: cursorStage5b 64s linear var(--delay) infinite; }
-    .cursor5b { animation: move5b 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor5b { animation: move5b 64s steps(26, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal5b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
     @keyframes move5b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage5b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item6 { --delay: 17.2s;  }
     .reveal6a { --delay: 17.2s; animation: reveal6a 64s steps(34, end) var(--delay) infinite; }
     .cursor-stage6a { animation: cursorStage6a 64s linear var(--delay) infinite; }
-    .cursor6a { animation: move6a 64s steps(34, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor6a { animation: move6a 64s steps(34, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal6a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 340px; } 6.23438%, 100% { width: 0; } }
     @keyframes move6a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(340px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage6a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item7 { --delay: 21.2s;  }
     .reveal7a { --delay: 21.2s; animation: reveal7a 64s steps(23, end) var(--delay) infinite; }
     .cursor-stage7a { animation: cursorStage7a 64s linear var(--delay) infinite; }
-    .cursor7a { animation: move7a 64s steps(23, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor7a { animation: move7a 64s steps(23, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal7a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 233px; } 6.23438%, 100% { width: 0; } }
     @keyframes move7a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(233px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage7a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item8 { --delay: 25.2s;  }
     .reveal8a { --delay: 25.2s; animation: reveal8a 64s steps(28, end) var(--delay) infinite; }
     .cursor-stage8a { animation: cursorStage8a 64s linear var(--delay) infinite; }
-    .cursor8a { animation: move8a 64s steps(28, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor8a { animation: move8a 64s steps(28, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal8a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 282px; } 6.23438%, 100% { width: 0; } }
     @keyframes move8a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(282px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage8a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item9 { --delay: 29.2s;  }
     .reveal9a { --delay: 29.2s; animation: reveal9a 64s steps(23, end) var(--delay) infinite; }
     .cursor-stage9a { animation: cursorStage9a 64s linear var(--delay) infinite; }
-    .cursor9a { animation: move9a 64s steps(23, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor9a { animation: move9a 64s steps(23, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal9a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 233px; } 6.23438%, 100% { width: 0; } }
     @keyframes move9a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(233px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage9a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
     .reveal9b { --delay: 29.2s; animation: reveal9b 64s steps(23, end) var(--delay) infinite; }
     .cursor-stage9b { animation: cursorStage9b 64s linear var(--delay) infinite; }
-    .cursor9b { animation: move9b 64s steps(23, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor9b { animation: move9b 64s steps(23, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal9b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 233px; } 6.23438%, 100% { width: 0; } }
     @keyframes move9b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(233px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage9b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item10 { --delay: 33.2s;  }
     .reveal10a { --delay: 33.2s; animation: reveal10a 64s steps(32, end) var(--delay) infinite; }
     .cursor-stage10a { animation: cursorStage10a 64s linear var(--delay) infinite; }
-    .cursor10a { animation: move10a 64s steps(32, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor10a { animation: move10a 64s steps(32, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal10a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 321px; } 6.23438%, 100% { width: 0; } }
     @keyframes move10a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(321px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage10a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
     .reveal10b { --delay: 33.2s; animation: reveal10b 64s steps(27, end) var(--delay) infinite; }
     .cursor-stage10b { animation: cursorStage10b 64s linear var(--delay) infinite; }
-    .cursor10b { animation: move10b 64s steps(27, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor10b { animation: move10b 64s steps(27, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal10b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 272px; } 6.23438%, 100% { width: 0; } }
     @keyframes move10b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(272px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage10b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item11 { --delay: 37.2s;  }
     .reveal11a { --delay: 37.2s; animation: reveal11a 64s steps(26, end) var(--delay) infinite; }
     .cursor-stage11a { animation: cursorStage11a 64s linear var(--delay) infinite; }
-    .cursor11a { animation: move11a 64s steps(26, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor11a { animation: move11a 64s steps(26, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal11a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 262px; } 6.23438%, 100% { width: 0; } }
     @keyframes move11a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(262px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage11a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
     .reveal11b { --delay: 37.2s; animation: reveal11b 64s steps(27, end) var(--delay) infinite; }
     .cursor-stage11b { animation: cursorStage11b 64s linear var(--delay) infinite; }
-    .cursor11b { animation: move11b 64s steps(27, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor11b { animation: move11b 64s steps(27, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal11b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 272px; } 6.23438%, 100% { width: 0; } }
     @keyframes move11b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(272px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage11b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item12 { --delay: 41.2s;  }
     .reveal12a { --delay: 41.2s; animation: reveal12a 64s steps(34, end) var(--delay) infinite; }
     .cursor-stage12a { animation: cursorStage12a 64s linear var(--delay) infinite; }
-    .cursor12a { animation: move12a 64s steps(34, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor12a { animation: move12a 64s steps(34, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal12a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 340px; } 6.23438%, 100% { width: 0; } }
     @keyframes move12a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(340px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage12a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item13 { --delay: 45.2s;  }
     .reveal13a { --delay: 45.2s; animation: reveal13a 64s steps(11, end) var(--delay) infinite; }
     .cursor-stage13a { animation: cursorStage13a 64s linear var(--delay) infinite; }
-    .cursor13a { animation: move13a 64s steps(11, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor13a { animation: move13a 64s steps(11, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal13a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 184px; } 6.23438%, 100% { width: 0; } }
     @keyframes move13a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(184px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage13a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item14 { --delay: 49.2s;  }
     .reveal14a { --delay: 49.2s; animation: reveal14a 64s steps(33, end) var(--delay) infinite; }
     .cursor-stage14a { animation: cursorStage14a 64s linear var(--delay) infinite; }
-    .cursor14a { animation: move14a 64s steps(33, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor14a { animation: move14a 64s steps(33, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal14a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 331px; } 6.23438%, 100% { width: 0; } }
     @keyframes move14a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(331px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage14a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item15 { --delay: 53.2s;  }
     .reveal15a { --delay: 53.2s; animation: reveal15a 64s steps(22, end) var(--delay) infinite; }
     .cursor-stage15a { animation: cursorStage15a 64s linear var(--delay) infinite; }
-    .cursor15a { animation: move15a 64s steps(22, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor15a { animation: move15a 64s steps(22, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal15a { 0%, 0% { width: 0; } 1.875%, 5.96875% { width: 223px; } 6.23438%, 100% { width: 0; } }
     @keyframes move15a { 0%, 0% { transform: translateX(0); } 1.875%, 5.96875% { transform: translateX(223px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage15a { 0%, 2% { opacity: 1; } 2.03125%, 100% { opacity: 0; } }
     .reveal15b { --delay: 53.2s; animation: reveal15b 64s steps(22, end) var(--delay) infinite; }
     .cursor-stage15b { animation: cursorStage15b 64s linear var(--delay) infinite; }
-    .cursor15b { animation: move15b 64s steps(22, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor15b { animation: move15b 64s steps(22, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal15b { 0%, 2.03125% { width: 0; } 4.14063%, 5.96875% { width: 223px; } 6.23438%, 100% { width: 0; } }
     @keyframes move15b { 0%, 2.03125% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(223px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage15b { 0%, 2.01563% { opacity: 0; } 2.03125%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
     .item16 { --delay: 57.2s;  }
     .reveal16a { --delay: 57.2s; animation: reveal16a 64s steps(27, end) var(--delay) infinite; }
     .cursor-stage16a { animation: cursorStage16a 64s linear var(--delay) infinite; }
-    .cursor16a { animation: move16a 64s steps(27, end) var(--delay) infinite, blink .8s step-end infinite; }
+    .cursor16a { animation: move16a 64s steps(27, end) var(--delay) infinite, blink .8s step-end var(--delay) infinite; }
     @keyframes reveal16a { 0%, 0% { width: 0; } 4.14063%, 5.96875% { width: 272px; } 6.23438%, 100% { width: 0; } }
     @keyframes move16a { 0%, 0% { transform: translateX(0); } 4.14063%, 5.96875% { transform: translateX(272px); } 6.23438%, 100% { transform: translateX(0); } }
     @keyframes cursorStage16a { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
-    @keyframes show { 0%, 5.96875% { opacity: 1; } 6.23438%, 100% { opacity: 0; } }
+    @keyframes show { 0%, 5.96875% { opacity: 1; } 6.25%, 100% { opacity: 0; } }
     @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: 0; } }
 
     @media (prefers-reduced-motion: reduce) {
