@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="88" viewBox="0 0 420 88" role="img" aria-labelledby="title desc">
+  <title id="title">白龙的移动端动态打字介绍</title>
+  <desc id="desc">使用逐字显示实现打字效果，完全兼容移动端。</desc>
+
+  <defs>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="36" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#2F7F90"/>
+      <stop offset=".54" stop-color="#536F9D"/>
+      <stop offset="1" stop-color="#72B8C4"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .copy {
+      fill: url(#ink);
+      font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* 隐藏所有字符，通过动画逐个显示 */
+    tspan {
+      opacity: 0;
+    }
+
+    .cursor {
+      fill: #2F7F90;
+      animation: blink 0.8s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 48% { opacity: 1; }
+      49%, 100% { opacity: 0; }
+    }
+
+    /* 句子1: Building memory for agents (26字符) */
+    .s1 { animation: showSentence 64s -2.8s infinite; }
+    .s1 tspan:nth-child(1) { animation: showChar 64s -2.7s infinite; }
+    .s1 tspan:nth-child(2) { animation: showChar 64s -2.6s infinite; }
+    .s1 tspan:nth-child(3) { animation: showChar 64s -2.5s infinite; }
+    .s1 tspan:nth-child(4) { animation: showChar 64s -2.4s infinite; }
+    .s1 tspan:nth-child(5) { animation: showChar 64s -2.3s infinite; }
+    .s1 tspan:nth-child(6) { animation: showChar 64s -2.2s infinite; }
+    .s1 tspan:nth-child(7) { animation: showChar 64s -2.1s infinite; }
+    .s1 tspan:nth-child(8) { animation: showChar 64s -2.0s infinite; }
+    .s1 tspan:nth-child(9) { animation: showChar 64s -1.9s infinite; }
+    .s1 tspan:nth-child(10) { animation: showChar 64s -1.8s infinite; }
+    .s1 tspan:nth-child(11) { animation: showChar 64s -1.7s infinite; }
+    .s1 tspan:nth-child(12) { animation: showChar 64s -1.6s infinite; }
+    .s1 tspan:nth-child(13) { animation: showChar 64s -1.5s infinite; }
+    .s1 tspan:nth-child(14) { animation: showChar 64s -1.4s infinite; }
+    .s1 tspan:nth-child(15) { animation: showChar 64s -1.3s infinite; }
+    .s1 tspan:nth-child(16) { animation: showChar 64s -1.2s infinite; }
+    .s1 tspan:nth-child(17) { animation: showChar 64s -1.1s infinite; }
+    .s1 tspan:nth-child(18) { animation: showChar 64s -1.0s infinite; }
+    .s1 tspan:nth-child(19) { animation: showChar 64s -0.9s infinite; }
+    .s1 tspan:nth-child(20) { animation: showChar 64s -0.8s infinite; }
+    .s1 tspan:nth-child(21) { animation: showChar 64s -0.7s infinite; }
+    .s1 tspan:nth-child(22) { animation: showChar 64s -0.6s infinite; }
+    .s1 tspan:nth-child(23) { animation: showChar 64s -0.5s infinite; }
+    .s1 tspan:nth-child(24) { animation: showChar 64s -0.4s infinite; }
+    .s1 tspan:nth-child(25) { animation: showChar 64s -0.3s infinite; }
+    .s1 tspan:nth-child(26) { animation: showChar 64s -0.2s infinite; }
+
+    @keyframes showSentence {
+      0%, 6.25% { opacity: 1; }
+      6.26%, 100% { opacity: 0; }
+    }
+
+    @keyframes showChar {
+      0%, 6.25% { opacity: 1; }
+      6.26%, 100% { opacity: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      tspan { opacity: 1 !important; }
+      .s1 { opacity: 1; }
+      .cursor { display: none; }
+    }
+  </style>
+
+  <!-- 句子 1: Building memory for agents -->
+  <text class="copy s1" x="210" y="54" text-anchor="middle">
+    <tspan>B</tspan><tspan>u</tspan><tspan>i</tspan><tspan>l</tspan><tspan>d</tspan><tspan>i</tspan><tspan>n</tspan><tspan>g</tspan><tspan> </tspan><tspan>m</tspan><tspan>e</tspan><tspan>m</tspan><tspan>o</tspan><tspan>r</tspan><tspan>y</tspan><tspan> </tspan><tspan>f</tspan><tspan>o</tspan><tspan>r</tspan><tspan> </tspan><tspan>a</tspan><tspan>g</tspan><tspan>e</tspan><tspan>n</tspan><tspan>t</tspan><tspan>s</tspan>
+  </text>
+  <rect class="cursor s1" x="340" y="31" width="3" height="24" rx="1"/>
+
+</svg>

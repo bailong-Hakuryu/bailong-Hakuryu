@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="88" viewBox="0 0 420 88" role="img" aria-labelledby="title desc">
+  <title id="title">白龙的移动端动态打字介绍</title>
+  <desc id="desc">使用 JavaScript 实现真正的打字效果，完全兼容移动端。</desc>
+
+  <defs>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="36" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#2F7F90"/>
+      <stop offset=".54" stop-color="#536F9D"/>
+      <stop offset="1" stop-color="#72B8C4"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .copy {
+      fill: url(#ink);
+      font-family: "Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace;
+      font-size: 16px;
+      font-weight: 600;
+      text-anchor: middle;
+    }
+
+    .cursor {
+      fill: #2F7F90;
+      animation: blink 0.8s step-end infinite;
+    }
+
+    @keyframes blink {
+      0%, 48% { opacity: 1; }
+      49%, 100% { opacity: 0; }
+    }
+  </style>
+
+  <text id="line1" class="copy" x="210" y="44"></text>
+  <text id="line2" class="copy" x="210" y="70"></text>
+  <rect id="cursor" class="cursor" x="210" y="25" width="3" height="24" rx="1"/>
+
+  <script type="text/javascript">
+  <![CDATA[
+    (function() {
+      const sentences = [
+        { text: "Building memory for agents", lines: 1 },
+        { text: "sudo make me a better developer", lines: 1 },
+        { text: "Coding until Nachoneko\nsays I'm doing well.", lines: 2 },
+        { text: "404: Motivation not found.", lines: 1 },
+        { text: "Powered by code,\ncuriosity, and cat energy.", lines: 2 },
+        { text: "Compiling thoughts into reality...", lines: 1 },
+        { text: "Quiet tools for Windows", lines: 1 },
+        { text: "Currently debugging my life.", lines: 1 },
+        { text: "Professional developer.\nAmateur cat enthusiast.", lines: 2 },
+        { text: "Powered by curiosity, Nachoneko,\nand questionable decisions.", lines: 2 },
+        { text: "Writing code while waiting\nfor someone to pat my head.", lines: 2 },
+        { text: "Probably fixing something at 3 AM.", lines: 1 },
+        { text: "代码、记忆，还有一点猫", lines: 1 },
+        { text: "It works on my machine. Probably.", lines: 1 },
+        { text: "Open source developer,\nfull-time cat enjoyer.", lines: 2 },
+        { text: "One more commit won't hurt.", lines: 1 }
+      ];
+
+      let currentSentence = 0;
+      let currentChar = 0;
+      let currentLine = 0;
+      let isTyping = false;
+
+      const line1 = document.getElementById('line1');
+      const line2 = document.getElementById('line2');
+      const cursor = document.getElementById('cursor');
+
+      function measureText(text, fontSize) {
+        const tempText = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        tempText.setAttribute('font-family', '"Cascadia Code", "SFMono-Regular", "Microsoft YaHei", monospace');
+        tempText.setAttribute('font-size', fontSize);
+        tempText.setAttribute('font-weight', '600');
+        tempText.textContent = text;
+        document.documentElement.appendChild(tempText);
+        const bbox = tempText.getBBox();
+        document.documentElement.removeChild(tempText);
+        return bbox.width;
+      }
+
+      function updateCursor() {
+        const sentence = sentences[currentSentence];
+        const lines = sentence.text.split('\n');
+
+        if (sentence.lines === 1) {
+          const text = line1.textContent;
+          const width = measureText(text, 16);
+          cursor.setAttribute('x', 210 + width / 2 + 2);
+          cursor.setAttribute('y', 25);
+        } else {
+          if (currentLine === 0) {
+            const text = line1.textContent;
+            const width = measureText(text, 16);
+            cursor.setAttribute('x', 210 + width / 2 + 2);
+            cursor.setAttribute('y', 19);
+          } else {
+            const text = line2.textContent;
+            const width = measureText(text, 16);
+            cursor.setAttribute('x', 210 + width / 2 + 2);
+            cursor.setAttribute('y', 48);
+          }
+        }
+      }
+
+      function typeCharacter() {
+        if (!isTyping) return;
+
+        const sentence = sentences[currentSentence];
+        const lines = sentence.text.split('\n');
+
+        if (currentLine < lines.length) {
+          const lineText = lines[currentLine];
+          const targetElement = currentLine === 0 ? line1 : line2;
+
+          if (currentChar < lineText.length) {
+            targetElement.textContent += lineText[currentChar];
+            currentChar++;
+            updateCursor();
+            setTimeout(typeCharacter, 80);
+          } else {
+            currentChar = 0;
+            currentLine++;
+            if (currentLine < lines.length) {
+              setTimeout(typeCharacter, 100);
+            } else {
+              setTimeout(nextSentence, 2000);
+            }
+          }
+        }
+      }
+
+      function nextSentence() {
+        line1.textContent = '';
+        line2.textContent = '';
+        currentChar = 0;
+        currentLine = 0;
+        currentSentence = (currentSentence + 1) % sentences.length;
+
+        const sentence = sentences[currentSentence];
+        if (sentence.lines === 1) {
+          line1.setAttribute('y', 54);
+          line2.textContent = '';
+        } else {
+          line1.setAttribute('y', 44);
+        }
+
+        setTimeout(typeCharacter, 200);
+      }
+
+      function start() {
+        isTyping = true;
+        line1.setAttribute('y', 54);
+        typeCharacter();
+      }
+
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        line1.textContent = sentences[0].text.split('\n')[0];
+        line1.setAttribute('y', 54);
+      } else {
+        start();
+      }
+    })();
+  ]]>
+  </script>
+</svg>

@@ -12,7 +12,7 @@
   <p>让 Agent 记得走过的路，也让工具安静地解决问题。</p>
 
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/typing-banner-mobile-simple.svg"/>
+    <source media="(max-width: 600px)" srcset="./assets/typing-banner-mobile-js.svg"/>
     <img src="./assets/typing-banner.svg" alt="白龙的动态打字介绍" width="760" loading="lazy"/>
   </picture>
 
